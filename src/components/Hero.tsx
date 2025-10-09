@@ -11,6 +11,7 @@ export const Hero = () => {
             opacity: 0, 
             animationFillMode: 'forwards',
             fontWeight: 900,
+            textShadow: '0 0 40px hsl(280 70% 75% / 0.25)',
           }}
         >
           HAZURI K.

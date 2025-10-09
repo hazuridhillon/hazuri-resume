@@ -1,20 +1,20 @@
-import { Heart, Star, Flower } from "lucide-react";
+import { Heart, Star, Flower, Circle } from "lucide-react";
 
 interface ShapeProps {
-  type: "heart" | "star" | "flower";
+  type: "heart" | "star" | "flower" | "circle";
   className?: string;
   size?: number;
   style?: React.CSSProperties;
 }
 
 const Shape = ({ type, className = "", size = 48, style }: ShapeProps) => {
-  const Icon = type === "heart" ? Heart : type === "star" ? Star : Flower;
+  const Icon = type === "heart" ? Heart : type === "star" ? Star : type === "circle" ? Circle : Flower;
   
   return (
     <div 
       className={`absolute opacity-[0.08] ${className}`} 
       style={{ 
-        filter: 'blur(20px)',
+        filter: 'blur(24px)',
         ...style 
       }}
     >
@@ -45,28 +45,44 @@ export const GeometricShapes = () => {
       </svg>
       
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        {/* Hearts - scattered throughout */}
-        <Shape type="heart" className="top-[8%] left-[12%] animate-drift" size={60} />
-        <Shape type="heart" className="top-[35%] right-[8%] animate-drift-slow" size={48} />
-        <Shape type="heart" className="top-[65%] left-[18%] animate-drift" size={52} />
-        <Shape type="heart" className="bottom-[15%] right-[15%] animate-drift-slow" size={56} />
+        {/* Top section - Hero area */}
+        <Shape type="heart" className="top-[5%] left-[8%] animate-drift" size={64} />
+        <Shape type="star" className="top-[12%] right-[15%] animate-drift-slow" size={58} />
+        <Shape type="flower" className="top-[8%] left-[40%] animate-drift-slower" size={70} />
+        <Shape type="circle" className="top-[15%] right-[35%] animate-drift-fast" size={52} />
+        <Shape type="heart" className="top-[18%] left-[22%] animate-drift-slow" size={48} style={{ opacity: 0.06 }} />
         
-        {/* Stars - scattered throughout */}
-        <Shape type="star" className="top-[18%] right-[20%] animate-drift-slow" size={58} />
-        <Shape type="star" className="top-[50%] left-[8%] animate-drift" size={50} />
-        <Shape type="star" className="top-[75%] right-[25%] animate-drift-slow" size={54} />
-        <Shape type="star" className="bottom-[25%] left-[25%] animate-drift" size={52} />
+        {/* Upper-middle section */}
+        <Shape type="star" className="top-[25%] left-[12%] animate-drift-slower" size={56} />
+        <Shape type="flower" className="top-[28%] right-[10%] animate-drift" size={62} />
+        <Shape type="circle" className="top-[32%] left-[45%] animate-drift-fast" size={50} style={{ opacity: 0.07 }} />
+        <Shape type="heart" className="top-[30%] right-[28%] animate-drift-slow" size={54} />
         
-        {/* Flowers - scattered throughout */}
-        <Shape type="flower" className="top-[12%] left-[35%] animate-drift" size={64} />
-        <Shape type="flower" className="top-[42%] right-[12%] animate-drift-slow" size={56} />
-        <Shape type="flower" className="top-[68%] left-[40%] animate-drift" size={60} />
-        <Shape type="flower" className="bottom-[18%] right-[35%] animate-drift-slow" size={58} />
+        {/* Middle section */}
+        <Shape type="flower" className="top-[42%] left-[18%] animate-drift-fast" size={68} />
+        <Shape type="star" className="top-[45%] right-[20%] animate-drift" size={60} />
+        <Shape type="heart" className="top-[48%] left-[50%] animate-drift-slower" size={56} style={{ opacity: 0.09 }} />
+        <Shape type="circle" className="top-[50%] right-[8%] animate-drift-slow" size={52} />
+        <Shape type="flower" className="top-[52%] left-[8%] animate-drift" size={58} />
         
-        {/* Additional layer for depth */}
-        <Shape type="heart" className="top-[28%] left-[45%] animate-drift-slow" size={44} style={{ opacity: 0.05 }} />
-        <Shape type="star" className="top-[55%] right-[40%] animate-drift" size={46} style={{ opacity: 0.06 }} />
-        <Shape type="flower" className="top-[85%] left-[15%] animate-drift-slow" size={52} style={{ opacity: 0.05 }} />
+        {/* Lower-middle section */}
+        <Shape type="star" className="top-[60%] right-[25%] animate-drift-slow" size={62} />
+        <Shape type="heart" className="top-[62%] left-[25%] animate-drift-fast" size={54} />
+        <Shape type="circle" className="top-[65%] right-[40%] animate-drift-slower" size={50} style={{ opacity: 0.08 }} />
+        <Shape type="flower" className="top-[68%] left-[42%] animate-drift" size={64} />
+        
+        {/* Bottom section */}
+        <Shape type="heart" className="top-[75%] right-[18%] animate-drift-slow" size={58} />
+        <Shape type="star" className="top-[78%] left-[15%] animate-drift-slower" size={56} />
+        <Shape type="circle" className="top-[80%] right-[32%] animate-drift-fast" size={52} />
+        <Shape type="flower" className="top-[82%] left-[38%] animate-drift" size={60} style={{ opacity: 0.07 }} />
+        <Shape type="heart" className="top-[85%] right-[12%] animate-drift-slow" size={54} />
+        
+        {/* Extra scattered shapes for natural look */}
+        <Shape type="star" className="top-[35%] left-[30%] animate-drift-fast" size={46} style={{ opacity: 0.06 }} />
+        <Shape type="circle" className="top-[55%] right-[15%] animate-drift" size={48} style={{ opacity: 0.06 }} />
+        <Shape type="flower" className="top-[72%] left-[28%] animate-drift-slower" size={52} style={{ opacity: 0.07 }} />
+        <Shape type="heart" className="top-[90%] left-[48%] animate-drift-slow" size={50} style={{ opacity: 0.08 }} />
       </div>
     </>
   );
