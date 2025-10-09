@@ -3,9 +3,9 @@ import { Mail, Linkedin, MapPin } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <h1 
-          className="text-7xl md:text-8xl lg:text-[10rem] font-black mb-8 tracking-tight animate-fade-up gradient-outline-text leading-none" 
+          className="text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight animate-fade-up gradient-outline-text leading-none" 
           style={{ 
             animationDelay: '0.1s', 
             opacity: 0, 
@@ -20,12 +20,13 @@ export const Hero = () => {
         </h1>
         
         <p 
-          className="text-2xl md:text-3xl lg:text-4xl mb-16 font-light tracking-wide animate-fade-up" 
+          className="text-xl md:text-2xl lg:text-3xl mb-16 font-medium tracking-wide animate-fade-up max-w-4xl mx-auto" 
           style={{ 
             animationDelay: '0.3s', 
             opacity: 0, 
             animationFillMode: 'forwards', 
-            color: 'hsl(280, 20%, 55%)' 
+            color: 'hsl(280, 25%, 45%)',
+            lineHeight: '1.5',
           }}
         >
           Tech Entrepreneur × Fashion Innovator × AI Strategist
