@@ -25,7 +25,7 @@ export const Skills = () => {
     <section className="py-32 px-6 relative mb-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-20 animate-fade-up">
-          <div className="w-20 h-20 rounded-2xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, hsl(270, 55%, 75%), hsl(280, 55%, 78%))' }}>
+          <div className="w-20 h-20 rounded-2xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, hsl(340, 75%, 65%), hsl(340, 75%, 70%))' }}>
             <Award size={36} className="text-white" />
           </div>
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold section-header">
@@ -103,8 +103,8 @@ export const Skills = () => {
                   animationDelay: '0.4s', 
                   opacity: 0, 
                   animationFillMode: 'forwards',
-                  background: 'linear-gradient(135deg, hsl(270, 55%, 78%) 0%, hsl(280, 55%, 75%) 100%)',
-                  boxShadow: '0 12px 40px -10px hsl(280 50% 70% / 0.4)',
+                  background: 'linear-gradient(135deg, hsl(340, 75%, 68%) 0%, hsl(340, 75%, 72%) 100%)',
+                  boxShadow: '0 12px 40px -10px hsl(340 75% 65% / 0.5)',
                 }}
               >
                 <h4 className="text-2xl md:text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>

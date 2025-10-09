@@ -11,7 +11,7 @@ export const Hero = () => {
             opacity: 0, 
             animationFillMode: 'forwards',
             fontWeight: 900,
-            textShadow: '0 0 40px hsl(280 55% 80% / 0.25)',
+            textShadow: '0 0 40px hsl(340 75% 70% / 0.4)',
           }}
         >
           HAZURI K.
@@ -25,7 +25,7 @@ export const Hero = () => {
             animationDelay: '0.3s', 
             opacity: 0, 
             animationFillMode: 'forwards', 
-            color: 'hsl(280, 25%, 45%)',
+            color: 'hsl(280, 30%, 35%)',
             lineHeight: '1.5',
           }}
         >

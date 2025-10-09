@@ -10,7 +10,7 @@
   :root {
     /* Base Colors - Warm neutral palette */
     --background: 15 25% 95%;
-    --foreground: 280 15% 25%;
+    --foreground: 280 20% 20%;
 
     /* Lavender → Pink → Purple Gradient Tokens */
     --lavender: 270 55% 85%;
@@ -20,10 +20,10 @@
     --lilac: 275 50% 88%;
 
     /* Primary brand colors */
-    --primary: 280 55% 70%;
+    --primary: 340 75% 60%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 340 75% 75%;
+    --secondary: 340 75% 70%;
     --secondary-foreground: 280 20% 20%;
 
     /* Card backgrounds */
@@ -32,7 +32,7 @@
 
     /* Muted elements */
     --muted: 15 15% 90%;
-    --muted-foreground: 280 15% 40%;
+    --muted-foreground: 280 20% 35%;
 
     /* Accent colors */
     --accent: 270 70% 75%;
@@ -96,24 +96,25 @@
     height: 100%;
     z-index: -2;
     background: 
-      radial-gradient(circle at 20% 30%, hsl(340, 75%, 90%) 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, hsl(340, 70%, 91%) 0%, transparent 35%),
-      radial-gradient(circle at 40% 80%, hsl(340, 68%, 89%) 0%, transparent 38%),
-      radial-gradient(circle at 90% 70%, hsl(340, 72%, 90%) 0%, transparent 32%),
+      radial-gradient(circle at 20% 30%, hsl(340, 75%, 88%) 0%, transparent 40%),
+      radial-gradient(circle at 80% 20%, hsl(340, 70%, 89%) 0%, transparent 35%),
+      radial-gradient(circle at 40% 80%, hsl(340, 68%, 87%) 0%, transparent 38%),
+      radial-gradient(circle at 90% 70%, hsl(340, 72%, 88%) 0%, transparent 32%),
+      radial-gradient(circle at 50% 50%, hsl(340, 65%, 90%) 0%, transparent 50%),
       linear-gradient(180deg, 
-        hsl(280, 50%, 92%) 0%, 
-        hsl(340, 60%, 91%) 20%,
+        hsl(340, 70%, 90%) 0%, 
+        hsl(340, 60%, 89%) 20%,
         hsl(280, 45%, 91%) 40%,
-        hsl(340, 55%, 90%) 60%,
+        hsl(340, 55%, 88%) 60%,
         hsl(280, 48%, 92%) 80%,
-        hsl(340, 60%, 91%) 100%);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 200%;
+        hsl(340, 65%, 89%) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 200%;
     animation: gradient-flow 60s ease-in-out infinite;
   }
 
   @keyframes gradient-flow {
-    0%, 100% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
-    50% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 100%; }
+    0%, 100% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+    50% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 100%; }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -150,21 +151,21 @@
   .gradient-outline-text {
     -webkit-text-stroke: 3px transparent;
     -webkit-text-fill-color: hsl(340, 75%, 85%);
-    background: linear-gradient(135deg, hsl(280, 55%, 75%), hsl(340, 75%, 75%));
+    background: linear-gradient(135deg, hsl(340, 75%, 65%), hsl(340, 75%, 75%));
     -webkit-background-clip: text;
     background-clip: text;
-    filter: drop-shadow(0 0 20px hsl(280 55% 80% / 0.3));
+    filter: drop-shadow(0 0 20px hsl(340 75% 70% / 0.4));
   }
 
   /* Gradient chip */
   .gradient-chip {
     @apply inline-flex items-center gap-2 px-8 py-4 rounded-full;
-    background: linear-gradient(120deg, hsl(270, 55%, 82%), hsl(340, 75%, 80%), hsl(280, 50%, 83%));
+    background: linear-gradient(120deg, hsl(340, 75%, 70%), hsl(340, 75%, 75%), hsl(340, 70%, 72%));
     color: white;
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: 0.01em;
-    box-shadow: 0 8px 24px hsl(280 50% 75% / 0.35), inset 0 1px 0 hsl(0 0% 100% / 0.3);
+    box-shadow: 0 8px 24px hsl(340 75% 70% / 0.4), inset 0 1px 0 hsl(0 0% 100% / 0.3);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
@@ -174,7 +175,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg, hsl(270, 60%, 85%), hsl(340, 78%, 83%), hsl(280, 55%, 85%));
+    background: linear-gradient(120deg, hsl(340, 75%, 75%), hsl(340, 80%, 78%), hsl(340, 75%, 76%));
     opacity: 0;
     transition: var(--transition-smooth);
   }
@@ -185,16 +186,16 @@
 
   .gradient-chip:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 32px hsl(280 60% 70% / 0.5), inset 0 1px 0 hsl(0 0% 100% / 0.4);
+    box-shadow: 0 12px 32px hsl(340 75% 70% / 0.6), inset 0 1px 0 hsl(0 0% 100% / 0.4);
   }
 
   /* Section header with glow */
   .section-header {
-    background: linear-gradient(135deg, hsl(280, 55%, 70%), hsl(340, 75%, 65%));
+    background: linear-gradient(135deg, hsl(340, 75%, 60%), hsl(340, 75%, 65%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 12px hsl(280 55% 75% / 0.3));
+    filter: drop-shadow(0 2px 12px hsl(340 75% 70% / 0.4));
   }
 
   /* Gradient elevated card */
