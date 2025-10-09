@@ -165,27 +165,6 @@ export const Experience = () => {
               </ul>
             </div>
           </div>
-          
-          {/* AAPI Silicon Valley */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.35s', opacity: 0, animationFillMode: 'forwards' }}>
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">Co-Founder and Publicity Chair</h3>
-                <p className="text-xl gradient-text font-bold mb-2">AAPI Silicon Valley</p>
-                <p className="text-base font-medium text-muted-foreground">Mountain View, CA</p>
-              </div>
-              <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">March 2021 – August 2022</span>
-            </div>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Organized youth-led advocacy events for 1,000+ attendees; built website and led communications
-                </p>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
