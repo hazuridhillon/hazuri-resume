@@ -1,17 +1,48 @@
 import { Mail, Linkedin, MapPin } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export const Hero = () => {
+  const [isScrolling, setIsScrolling] = useState(false);
+  const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(true);
+      
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+      
+      const timeout = setTimeout(() => {
+        setIsScrolling(false);
+      }, 150);
+      
+      setScrollTimeout(timeout);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+    };
+  }, [scrollTimeout]);
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <h1 
-          className="text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight animate-fade-up gradient-outline-text leading-none" 
+          className={`text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight animate-fade-up leading-none transition-all duration-300 ${
+            isScrolling ? 'gradient-outline-text' : ''
+          }`}
           style={{ 
             animationDelay: '0.1s', 
             opacity: 0, 
             animationFillMode: 'forwards',
             fontWeight: 900,
-            textShadow: '0 0 40px hsl(0 70% 65% / 0.4)',
+            color: isScrolling ? undefined : 'hsl(280, 20%, 20%)',
+            textShadow: isScrolling ? '0 0 40px hsl(0 70% 65% / 0.4)' : 'none',
           }}
         >
           HAZURI K.
