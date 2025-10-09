@@ -176,13 +176,20 @@
     content: '';
     position: absolute;
     inset: 0;
+    border-radius: inherit;
     background: linear-gradient(120deg, hsl(340, 75%, 75%), hsl(340, 80%, 78%), hsl(340, 75%, 76%));
     opacity: 0;
     transition: var(--transition-smooth);
+    z-index: 0;
   }
 
   .gradient-chip:hover::before {
     opacity: 1;
+  }
+  
+  .gradient-chip > * {
+    position: relative;
+    z-index: 1;
   }
 
   .gradient-chip:hover {
