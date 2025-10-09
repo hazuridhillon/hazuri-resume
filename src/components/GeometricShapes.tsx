@@ -37,9 +37,9 @@ export const GeometricShapes = () => {
       <svg width="0" height="0" style={{ position: 'absolute' }}>
         <defs>
           <linearGradient id="gradient-shape" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(220, 50%, 50%)" />
-            <stop offset="50%" stopColor="hsl(15, 80%, 70%)" />
-            <stop offset="100%" stopColor="hsl(40, 75%, 65%)" />
+            <stop offset="0%" stopColor="hsl(0, 70%, 70%)" />
+            <stop offset="50%" stopColor="hsl(0, 70%, 73%)" />
+            <stop offset="100%" stopColor="hsl(0, 65%, 71%)" />
           </linearGradient>
         </defs>
       </svg>
