@@ -4,18 +4,18 @@ export const Experience = () => {
   return (
     <section className="py-32 px-6 relative">
       <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-4 mb-20 animate-fade-up">
-          <Briefcase size={44} className="text-primary" />
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold section-header">EXPERIENCE</h2>
+        <div className="flex items-center gap-4 mb-20">
+          <Briefcase size={44} className="text-primary animate-fade-up" style={{ animationDelay: '0s', opacity: 0, animationFillMode: 'forwards' }} />
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold section-header animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>EXPERIENCE</h2>
         </div>
         
         <div className="space-y-8">
           {/* Dhillon Law Group */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">Business Management and AI Intern</h3>
-                <p className="text-xl gradient-text font-bold mb-2">Dhillon Law Group</p>
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">Business Management and AI Intern</h3>
+                <p className="text-xl font-bold mb-2 subheading-hover">Dhillon Law Group</p>
                 <p className="text-base font-medium text-muted-foreground">Remote, San Francisco, CA</p>
               </div>
               <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">June 2025 – August 2025</span>
@@ -38,11 +38,11 @@ export const Experience = () => {
           </div>
           
           {/* Phia */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.15s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">Operations Assistant Intern</h3>
-                <p className="text-xl gradient-text font-bold mb-2">Phia</p>
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">Operations Assistant Intern</h3>
+                <p className="text-xl font-bold mb-2 subheading-hover">Phia</p>
                 <p className="text-base font-medium text-muted-foreground">Remote, New York, NY</p>
               </div>
               <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2025 – June 2025</span>
@@ -71,11 +71,11 @@ export const Experience = () => {
           </div>
           
           {/* Nvidia */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">Project Management Intern – Supply Chain</h3>
-                <p className="text-xl gradient-text font-bold mb-2">Nvidia</p>
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">Project Management Intern – Supply Chain</h3>
+                <p className="text-xl font-bold mb-2 subheading-hover">Nvidia</p>
                 <p className="text-base font-medium text-muted-foreground">Santa Clara, CA</p>
               </div>
               <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2024 – August 2024</span>
@@ -110,11 +110,11 @@ export const Experience = () => {
           </div>
           
           {/* Marble Lotus */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.25s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">E-commerce and Product Development Intern</h3>
-                <p className="text-xl gradient-text font-bold mb-2">Marble Lotus</p>
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">E-commerce and Product Development Intern</h3>
+                <p className="text-xl font-bold mb-2 subheading-hover">Marble Lotus</p>
                 <p className="text-base font-medium text-muted-foreground">Remote</p>
               </div>
               <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2023 – August 2023</span>
@@ -131,11 +131,11 @@ export const Experience = () => {
           </div>
           
           {/* BeMe Health */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.6s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 text-foreground">BeingMe Podcast Host</h3>
-                <p className="text-xl gradient-text font-bold mb-2">BeMe Health</p>
+                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">BeingMe Podcast Host</h3>
+                <p className="text-xl font-bold mb-2 subheading-hover">BeMe Health</p>
                 <p className="text-base font-medium text-muted-foreground">San Jose, CA</p>
               </div>
               <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2021 – May 2023</span>

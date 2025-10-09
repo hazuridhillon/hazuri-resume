@@ -4,17 +4,17 @@ export const Education = () => {
   return (
     <section className="py-32 px-6 relative">
       <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-4 mb-20 animate-fade-up">
-          <GraduationCap size={44} className="text-primary" />
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold section-header">EDUCATION</h2>
+        <div className="flex items-center gap-4 mb-20">
+          <GraduationCap size={44} className="text-primary animate-fade-up" style={{ animationDelay: '0s', opacity: 0, animationFillMode: 'forwards' }} />
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold section-header animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>EDUCATION</h2>
         </div>
         
         <div className="space-y-8">
           {/* Babson College */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
-                <h3 className="text-3xl md:text-4xl font-bold gradient-text mb-3">Babson College</h3>
+                <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-3">Babson College</h3>
                 <p className="text-lg font-semibold text-foreground mb-2">Wellesley, MA</p>
                 <p className="text-xl font-medium text-foreground">Bachelor of Science, Technology Entrepreneurship</p>
               </div>
@@ -57,10 +57,10 @@ export const Education = () => {
           </div>
           
           {/* Stanford Online High School */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
               <div>
-                <h3 className="text-3xl md:text-4xl font-bold gradient-text mb-3">Stanford Online High School</h3>
+                <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-3">Stanford Online High School</h3>
                 <p className="text-lg font-semibold text-foreground mb-2">Palo Alto, CA</p>
                 <p className="text-xl font-medium text-foreground">High School Diploma</p>
               </div>
