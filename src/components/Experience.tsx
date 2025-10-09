@@ -1,32 +1,24 @@
-import { Briefcase, Heart } from "lucide-react";
+import { Briefcase } from "lucide-react";
 
 export const Experience = () => {
   return (
     <section className="py-32 px-6 relative">
-      {/* Decorative heart motif */}
-      <Heart 
-        className="absolute top-20 right-[10%] text-primary opacity-[0.04] animate-pulse-glow" 
-        size={80} 
-        fill="currentColor"
-        style={{ filter: 'blur(20px)' }}
-      />
-      
       <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-3 mb-16">
+        <div className="flex items-center gap-3 mb-16 animate-fade-up">
           <Briefcase size={40} className="text-primary" />
-          <h2 className="text-5xl md:text-6xl font-bold">EXPERIENCE</h2>
+          <h2 className="text-5xl md:text-6xl font-bold section-header">EXPERIENCE</h2>
         </div>
         
         <div className="space-y-8">
           {/* Dhillon Law Group */}
-          <div className="elevated-card animate-fade-up">
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
               <div>
                 <h3 className="text-3xl font-bold mb-2">Business Management and AI Intern</h3>
                 <p className="text-xl gradient-text font-semibold mb-1">Dhillon Law Group</p>
                 <p className="text-base text-muted-foreground">Remote, San Francisco, CA</p>
               </div>
-              <span className="chip text-sm">June 2025 – August 2025</span>
+              <span className="gradient-chip text-sm py-2 px-5">June 2025 – August 2025</span>
             </div>
             
             <ul className="space-y-3">
@@ -46,14 +38,14 @@ export const Experience = () => {
           </div>
           
           {/* Phia */}
-          <div className="elevated-card animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
+          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
               <div>
                 <h3 className="text-3xl font-bold mb-2">Operations Assistant Intern</h3>
                 <p className="text-xl gradient-text font-semibold mb-1">Phia</p>
                 <p className="text-base text-muted-foreground">Remote, New York, NY</p>
               </div>
-              <span className="chip text-sm">May 2025 – June 2025</span>
+              <span className="gradient-chip text-sm py-2 px-5">May 2025 – June 2025</span>
             </div>
             
             <ul className="space-y-3">

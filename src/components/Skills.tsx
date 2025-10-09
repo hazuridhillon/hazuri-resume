@@ -23,13 +23,13 @@ const interests = [
 
 export const Skills = () => {
   return (
-    <section className="py-32 px-6 relative">
+    <section className="py-32 px-6 relative mb-20">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center gap-4 mb-16">
-          <div className="w-16 h-16 rounded-2xl flex items-center justify-center" style={{ background: 'hsl(250, 75%, 65%)' }}>
+        <div className="flex items-center gap-4 mb-16 animate-fade-up">
+          <div className="w-16 h-16 rounded-2xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, hsl(270, 70%, 65%), hsl(280, 75%, 70%))' }}>
             <Award size={32} className="text-white" />
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(0, 0%, 15%)' }}>
+          <h2 className="text-5xl md:text-6xl font-bold section-header">
             SKILLS & INTERESTS
           </h2>
         </div>
@@ -38,18 +38,17 @@ export const Skills = () => {
           {/* Left Column: Skills Only */}
           <div>
             {/* Skills */}
-            <div className="animate-fade-up">
-              <h3 className="text-4xl font-bold mb-8" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(270, 70%, 60%)' }}>
+            <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
+              <h3 className="text-4xl font-bold mb-8 gradient-text">
                 Skills
               </h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill) => (
                   <span 
                     key={skill}
-                    className="inline-flex items-center px-6 py-3 rounded-full font-medium text-white transition-all hover:scale-105"
-                    style={{ background: 'hsl(250, 75%, 65%)' }}
+                    className="gradient-chip text-sm"
                   >
-                    {skill}
+                    <span className="relative z-10">{skill}</span>
                   </span>
                 ))}
               </div>
@@ -59,8 +58,8 @@ export const Skills = () => {
           {/* Right Column: Interests, then Certifications & Notable Achievement side by side */}
           <div className="space-y-8">
             {/* Interests */}
-            <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
-              <h3 className="text-4xl font-bold mb-8" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(340, 75%, 60%)' }}>
+            <div className="animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
+              <h3 className="text-4xl font-bold mb-8" style={{ color: 'hsl(340, 75%, 60%)', fontFamily: 'Playfair Display, serif' }}>
                 Interests
               </h3>
               <div className="flex flex-wrap gap-3 mb-8">
@@ -82,7 +81,7 @@ export const Skills = () => {
             {/* Certifications & Notable Achievement - Side by Side */}
             <div className="grid md:grid-cols-2 gap-6">
               {/* Certifications */}
-              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
+              <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}>
                 <h4 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(340, 75%, 60%)' }}>
                   Certifications
                 </h4>
@@ -102,10 +101,11 @@ export const Skills = () => {
               <div 
                 className="p-6 rounded-3xl animate-fade-up"
                 style={{ 
-                  animationDelay: '0.3s', 
+                  animationDelay: '0.4s', 
                   opacity: 0, 
                   animationFillMode: 'forwards',
                   background: 'linear-gradient(135deg, hsl(270, 70%, 65%) 0%, hsl(280, 75%, 60%) 100%)',
+                  boxShadow: '0 12px 40px -10px hsl(280 50% 60% / 0.4)',
                 }}
               >
                 <h4 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
