@@ -56,7 +56,7 @@ export const Hero = () => {
           
           <div className="gradient-chip">
             <MapPin size={20} className="relative z-10" />
-            <span className="relative z-10 gradient-text font-bold">Boston · Bay Area · New York</span>
+            <span className="relative z-10 font-bold text-white">Boston · Bay Area · New York</span>
           </div>
         </div>
       </div>
