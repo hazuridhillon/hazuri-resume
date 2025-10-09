@@ -2,8 +2,8 @@ import { Award } from "lucide-react";
 
 const skills = [
   "Leadership & Strategy",
-  "Intellectual Property",
-  "Market Research",
+  "Intellectual Property Registration",
+  "Market/User Research",
   "Competitive Analysis",
   "AI Implementation",
   "Supply Chain",
@@ -14,11 +14,10 @@ const skills = [
 
 const interests = [
   "Fashion & Beauty",
-  "Yoga & Pilates",
-  "Wellness",
+  "Yoga, Pilates, Wellness",
   "Pop-culture",
   "Consumer AI",
-  "Brand Activations",
+  "Brand Strategy & Activations",
 ];
 
 export const Skills = () => {
