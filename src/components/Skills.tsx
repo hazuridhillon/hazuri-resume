@@ -1,4 +1,4 @@
-import { Sparkles, Flower } from "lucide-react";
+import { Award } from "lucide-react";
 
 const skills = [
   "Leadership & Strategy",
@@ -24,76 +24,96 @@ const interests = [
 export const Skills = () => {
   return (
     <section className="py-32 px-6 relative">
-      {/* Decorative flower motifs */}
-      <Flower 
-        className="absolute top-32 left-[8%] text-primary opacity-[0.04] animate-drift-slow" 
-        size={70} 
-        fill="currentColor"
-        style={{ filter: 'blur(18px)' }}
-      />
-      <Flower 
-        className="absolute bottom-20 right-[12%] text-secondary opacity-[0.05] animate-drift" 
-        size={65} 
-        fill="currentColor"
-        style={{ filter: 'blur(16px)' }}
-      />
-      
-      <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-3 mb-16">
-          <Sparkles size={40} className="text-primary" />
-          <h2 className="text-5xl md:text-6xl font-bold">SKILLS & INTERESTS</h2>
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center gap-4 mb-16">
+          <div className="w-16 h-16 rounded-2xl flex items-center justify-center" style={{ background: 'hsl(250, 75%, 65%)' }}>
+            <Award size={32} className="text-white" />
+          </div>
+          <h2 className="text-5xl md:text-6xl font-bold" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(0, 0%, 15%)' }}>
+            SKILLS & INTERESTS
+          </h2>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Skills */}
-          <div className="animate-fade-up">
-            <h3 className="text-3xl font-bold gradient-text mb-8">Skills</h3>
-            <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
-                <span 
-                  key={skill}
-                  className="chip text-sm"
-                >
-                  {skill}
-                </span>
-              ))}
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Left Column: Skills & Certifications */}
+          <div className="space-y-12">
+            {/* Skills */}
+            <div className="animate-fade-up">
+              <h3 className="text-4xl font-bold mb-8" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(270, 70%, 60%)' }}>
+                Skills
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill) => (
+                  <span 
+                    key={skill}
+                    className="inline-flex items-center px-6 py-3 rounded-full font-medium text-white transition-all hover:scale-105"
+                    style={{ background: 'hsl(250, 75%, 65%)' }}
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Certifications */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
+              <h4 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(340, 75%, 60%)' }}>
+                Certifications
+              </h4>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <span className="text-pink-500 text-xl mt-1 flex-shrink-0">•</span>
+                  <p className="text-base text-muted-foreground">Responsible Business Alliance trained</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-pink-500 text-xl mt-1 flex-shrink-0">•</span>
+                  <p className="text-base text-muted-foreground">Certified Stott Pilates Instructor</p>
+                </li>
+              </ul>
             </div>
           </div>
           
-          {/* Interests */}
-          <div className="animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
-            <h3 className="text-3xl font-bold text-secondary mb-8" style={{ color: 'hsl(340, 75%, 65%)' }}>Interests</h3>
-            <div className="flex flex-wrap gap-3">
-              {interests.map((interest) => (
-                <span 
-                  key={interest}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 text-sm font-medium transition-all hover:scale-105"
-                  style={{ 
-                    borderColor: 'hsl(340, 75%, 75%)',
-                    color: 'hsl(340, 75%, 50%)',
-                  }}
-                >
-                  {interest}
-                </span>
-              ))}
+          {/* Right Column: Interests & Notable Achievement */}
+          <div className="space-y-8">
+            {/* Interests */}
+            <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
+              <h3 className="text-4xl font-bold mb-8" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(340, 75%, 60%)' }}>
+                Interests
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {interests.map((interest) => (
+                  <span 
+                    key={interest}
+                    className="inline-flex items-center px-6 py-3 rounded-full border-2 font-medium transition-all hover:scale-105"
+                    style={{ 
+                      borderColor: 'hsl(340, 75%, 70%)',
+                      color: 'hsl(340, 75%, 55%)',
+                    }}
+                  >
+                    {interest}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            {/* Notable Achievement */}
+            <div 
+              className="p-8 rounded-3xl animate-fade-up"
+              style={{ 
+                animationDelay: '0.3s', 
+                opacity: 0, 
+                animationFillMode: 'forwards',
+                background: 'linear-gradient(135deg, hsl(270, 70%, 65%) 0%, hsl(280, 75%, 60%) 100%)',
+              }}
+            >
+              <h4 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                Notable Achievement
+              </h4>
+              <p className="text-lg text-white/95">
+                Co-Founder of AAPI Silicon Valley - Organized youth-led advocacy events for 1,000+ attendees
+              </p>
             </div>
           </div>
-        </div>
-        
-        {/* Notable Achievement */}
-        <div 
-          className="mt-16 p-8 rounded-3xl animate-fade-up"
-          style={{ 
-            animationDelay: '0.4s', 
-            opacity: 0, 
-            animationFillMode: 'forwards',
-            background: 'linear-gradient(135deg, hsl(270, 70%, 70%) 0%, hsl(280, 75%, 65%) 100%)',
-          }}
-        >
-          <h4 className="text-2xl font-bold text-white mb-4">Notable Achievement</h4>
-          <p className="text-lg text-white/95">
-            Co-Founder of AAPI Silicon Valley - Organized youth-led advocacy events for 1,000+ attendees
-          </p>
         </div>
       </div>
     </section>

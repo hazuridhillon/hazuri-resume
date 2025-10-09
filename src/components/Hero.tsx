@@ -19,30 +19,33 @@ export const Hero = () => {
           <span className="gradient-text">DHILLON</span>
         </h1>
         
-        <p className="text-2xl md:text-3xl lg:text-4xl mb-12 font-light tracking-wide animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards', color: 'hsl(280, 20%, 35%)' }}>
+        <p className="text-2xl md:text-3xl lg:text-4xl mb-12 font-light tracking-wide animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards', color: 'hsl(280, 15%, 50%)' }}>
           Tech Entrepreneur × Fashion Innovator × AI Strategist
         </p>
         
         <div className="flex flex-wrap items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}>
-          <div className="chip">
-            <MapPin size={18} />
-            <span>Boston · Bay Area · New York</span>
-          </div>
-          
-          <a href="mailto:hazuridhillon@gmail.com" className="chip">
-            <Mail size={18} />
-            <span>Email</span>
+          <a 
+            href="mailto:hazuridhillon@gmail.com"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white/95 backdrop-blur-sm text-foreground font-medium text-base transition-all hover:scale-105 hover:bg-white hover:shadow-lg"
+          >
+            <Mail size={20} />
+            <span>hazuridhillon@gmail.com</span>
           </a>
           
           <a 
             href="https://linkedin.com/in/hazuri-dhillon" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="chip"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white/95 backdrop-blur-sm text-foreground font-medium text-base transition-all hover:scale-105 hover:bg-white hover:shadow-lg"
           >
-            <Linkedin size={18} />
+            <Linkedin size={20} />
             <span>LinkedIn</span>
           </a>
+          
+          <div className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white/95 backdrop-blur-sm text-foreground font-medium text-base">
+            <MapPin size={20} />
+            <span>Boston, Bay Area, New York</span>
+          </div>
         </div>
       </div>
     </section>
