@@ -3,20 +3,21 @@ import { Mail, Linkedin, MapPin } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated gradient background */}
-      <div 
-        className="absolute inset-0 animate-gradient-shift"
-        style={{
-          background: 'linear-gradient(135deg, hsl(270, 70%, 75%) 0%, hsl(340, 75%, 80%) 50%, hsl(280, 65%, 70%) 100%)',
-          backgroundSize: '200% 200%',
-        }}
-      />
-      
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-        <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
-          <span className="gradient-text">HAZURI K.</span>
+        <h1 
+          className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 tracking-tight animate-fade-up outlined-text" 
+          style={{ 
+            animationDelay: '0.1s', 
+            opacity: 0, 
+            animationFillMode: 'forwards',
+            WebkitTextStroke: '2px hsl(270, 70%, 60%)',
+            WebkitTextFillColor: 'transparent',
+            color: 'transparent',
+          }}
+        >
+          HAZURI K.
           <br />
-          <span className="gradient-text">DHILLON</span>
+          DHILLON
         </h1>
         
         <p className="text-2xl md:text-3xl lg:text-4xl mb-12 font-light tracking-wide animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards', color: 'hsl(280, 15%, 50%)' }}>

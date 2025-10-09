@@ -35,8 +35,8 @@ export const Skills = () => {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left Column: Skills & Certifications */}
-          <div className="space-y-12">
+          {/* Left Column: Skills Only */}
+          <div>
             {/* Skills */}
             <div className="animate-fade-up">
               <h3 className="text-4xl font-bold mb-8" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(270, 70%, 60%)' }}>
@@ -54,33 +54,16 @@ export const Skills = () => {
                 ))}
               </div>
             </div>
-            
-            {/* Certifications */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
-              <h4 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(340, 75%, 60%)' }}>
-                Certifications
-              </h4>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-pink-500 text-xl mt-1 flex-shrink-0">•</span>
-                  <p className="text-base text-muted-foreground">Responsible Business Alliance trained</p>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-pink-500 text-xl mt-1 flex-shrink-0">•</span>
-                  <p className="text-base text-muted-foreground">Certified Stott Pilates Instructor</p>
-                </li>
-              </ul>
-            </div>
           </div>
           
-          {/* Right Column: Interests & Notable Achievement */}
+          {/* Right Column: Interests, then Certifications & Notable Achievement side by side */}
           <div className="space-y-8">
             {/* Interests */}
             <div className="animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
               <h3 className="text-4xl font-bold mb-8" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(340, 75%, 60%)' }}>
                 Interests
               </h3>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 mb-8">
                 {interests.map((interest) => (
                   <span 
                     key={interest}
@@ -96,22 +79,42 @@ export const Skills = () => {
               </div>
             </div>
             
-            {/* Notable Achievement */}
-            <div 
-              className="p-8 rounded-3xl animate-fade-up"
-              style={{ 
-                animationDelay: '0.3s', 
-                opacity: 0, 
-                animationFillMode: 'forwards',
-                background: 'linear-gradient(135deg, hsl(270, 70%, 65%) 0%, hsl(280, 75%, 60%) 100%)',
-              }}
-            >
-              <h4 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
-                Notable Achievement
-              </h4>
-              <p className="text-lg text-white/95">
-                Co-Founder of AAPI Silicon Valley - Organized youth-led advocacy events for 1,000+ attendees
-              </p>
+            {/* Certifications & Notable Achievement - Side by Side */}
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Certifications */}
+              <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-6 animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
+                <h4 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif', color: 'hsl(340, 75%, 60%)' }}>
+                  Certifications
+                </h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-pink-500 text-xl mt-1 flex-shrink-0">•</span>
+                    <p className="text-sm text-muted-foreground">Responsible Business Alliance trained</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-pink-500 text-xl mt-1 flex-shrink-0">•</span>
+                    <p className="text-sm text-muted-foreground">Certified Stott Pilates Instructor</p>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Notable Achievement */}
+              <div 
+                className="p-6 rounded-3xl animate-fade-up"
+                style={{ 
+                  animationDelay: '0.3s', 
+                  opacity: 0, 
+                  animationFillMode: 'forwards',
+                  background: 'linear-gradient(135deg, hsl(270, 70%, 65%) 0%, hsl(280, 75%, 60%) 100%)',
+                }}
+              >
+                <h4 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: 'Space Grotesk, sans-serif' }}>
+                  Notable Achievement
+                </h4>
+                <p className="text-base text-white/95">
+                  Co-Founder of AAPI Silicon Valley - Organized youth-led advocacy events for 1,000+ attendees
+                </p>
+              </div>
             </div>
           </div>
         </div>
