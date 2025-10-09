@@ -13,14 +13,14 @@
     --foreground: 280 15% 25%;
 
     /* Lavender → Pink → Purple Gradient Tokens */
-    --lavender: 270 70% 75%;
+    --lavender: 270 55% 85%;
     --blush-pink: 340 75% 80%;
-    --soft-purple: 280 65% 70%;
+    --soft-purple: 280 50% 85%;
     --electric-blue: 220 85% 65%;
-    --lilac: 275 60% 78%;
+    --lilac: 275 50% 88%;
 
     /* Primary brand colors */
-    --primary: 280 65% 60%;
+    --primary: 280 55% 70%;
     --primary-foreground: 0 0% 100%;
     
     --secondary: 340 75% 75%;
@@ -44,15 +44,15 @@
     --ring: 280 65% 60%;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(270, 70%, 75%) 0%, hsl(340, 75%, 80%) 50%, hsl(280, 65%, 70%) 100%);
-    --gradient-chip: linear-gradient(120deg, hsl(270, 70%, 75%), hsl(340, 75%, 80%));
-    --gradient-border: linear-gradient(135deg, hsl(270, 70%, 75%), hsl(340, 75%, 80%), hsl(280, 65%, 70%));
-    --gradient-text: linear-gradient(135deg, hsl(280, 70%, 65%), hsl(340, 75%, 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(270, 55%, 82%) 0%, hsl(340, 75%, 80%) 50%, hsl(280, 50%, 83%) 100%);
+    --gradient-chip: linear-gradient(120deg, hsl(270, 55%, 82%), hsl(340, 75%, 80%));
+    --gradient-border: linear-gradient(135deg, hsl(270, 55%, 82%), hsl(340, 75%, 80%), hsl(280, 50%, 83%));
+    --gradient-text: linear-gradient(135deg, hsl(280, 55%, 75%), hsl(340, 75%, 70%));
     --gradient-bg-flow: linear-gradient(180deg, 
       hsl(340, 75%, 88%) 0%, 
-      hsl(270, 70%, 85%) 25%,
-      hsl(280, 65%, 83%) 50%,
-      hsl(270, 70%, 85%) 75%,
+      hsl(270, 50%, 90%) 25%,
+      hsl(280, 45%, 89%) 50%,
+      hsl(270, 50%, 90%) 75%,
       hsl(340, 75%, 88%) 100%);
     
     /* Shadows */
@@ -93,19 +93,25 @@
     width: 100%;
     height: 100%;
     z-index: -2;
-    background: linear-gradient(180deg, 
-      hsl(340, 75%, 88%) 0%, 
-      hsl(270, 70%, 85%) 25%,
-      hsl(280, 65%, 83%) 50%,
-      hsl(270, 70%, 85%) 75%,
-      hsl(340, 75%, 88%) 100%);
-    background-size: 100% 200%;
+    background: 
+      radial-gradient(circle at 20% 30%, hsl(340, 75%, 90%) 0%, transparent 40%),
+      radial-gradient(circle at 80% 20%, hsl(340, 70%, 91%) 0%, transparent 35%),
+      radial-gradient(circle at 40% 80%, hsl(340, 68%, 89%) 0%, transparent 38%),
+      radial-gradient(circle at 90% 70%, hsl(340, 72%, 90%) 0%, transparent 32%),
+      linear-gradient(180deg, 
+        hsl(280, 50%, 92%) 0%, 
+        hsl(340, 60%, 91%) 20%,
+        hsl(280, 45%, 91%) 40%,
+        hsl(340, 55%, 90%) 60%,
+        hsl(280, 48%, 92%) 80%,
+        hsl(340, 60%, 91%) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 200%;
     animation: gradient-flow 60s ease-in-out infinite;
   }
 
   @keyframes gradient-flow {
-    0%, 100% { background-position: 0% 0%; }
-    50% { background-position: 0% 100%; }
+    0%, 100% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
+    50% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 100%; }
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -132,7 +138,7 @@
 @layer components {
   /* Gradient text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(280, 70%, 65%), hsl(340, 75%, 70%));
+    background: linear-gradient(135deg, hsl(280, 55%, 75%), hsl(340, 75%, 70%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -140,22 +146,22 @@
 
   .gradient-outline-text {
     -webkit-text-stroke: 3px transparent;
-    -webkit-text-fill-color: hsl(340, 75%, 82%);
-    background: linear-gradient(135deg, hsl(280, 70%, 65%), hsl(340, 75%, 70%));
+    -webkit-text-fill-color: hsl(340, 75%, 85%);
+    background: linear-gradient(135deg, hsl(280, 55%, 75%), hsl(340, 75%, 75%));
     -webkit-background-clip: text;
     background-clip: text;
-    filter: drop-shadow(0 0 20px hsl(280 70% 75% / 0.3));
+    filter: drop-shadow(0 0 20px hsl(280 55% 80% / 0.3));
   }
 
   /* Gradient chip */
   .gradient-chip {
     @apply inline-flex items-center gap-2 px-8 py-4 rounded-full;
-    background: linear-gradient(120deg, hsl(270, 70%, 75%), hsl(340, 75%, 80%), hsl(280, 65%, 75%));
+    background: linear-gradient(120deg, hsl(270, 55%, 82%), hsl(340, 75%, 80%), hsl(280, 50%, 83%));
     color: white;
     font-weight: 600;
     font-size: 0.95rem;
     letter-spacing: 0.01em;
-    box-shadow: 0 8px 24px hsl(280 60% 70% / 0.35), inset 0 1px 0 hsl(0 0% 100% / 0.3);
+    box-shadow: 0 8px 24px hsl(280 50% 75% / 0.35), inset 0 1px 0 hsl(0 0% 100% / 0.3);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
@@ -165,7 +171,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(120deg, hsl(270, 75%, 80%), hsl(340, 80%, 85%), hsl(280, 70%, 80%));
+    background: linear-gradient(120deg, hsl(270, 60%, 85%), hsl(340, 78%, 83%), hsl(280, 55%, 85%));
     opacity: 0;
     transition: var(--transition-smooth);
   }
@@ -181,11 +187,11 @@
 
   /* Section header with glow */
   .section-header {
-    background: linear-gradient(135deg, hsl(280, 70%, 60%), hsl(340, 75%, 65%));
+    background: linear-gradient(135deg, hsl(280, 55%, 70%), hsl(340, 75%, 65%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 12px hsl(280 70% 70% / 0.3));
+    filter: drop-shadow(0 2px 12px hsl(280 55% 75% / 0.3));
   }
 
   /* Gradient elevated card */
