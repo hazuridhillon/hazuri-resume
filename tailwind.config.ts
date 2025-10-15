@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['Fraunces', 'Georgia', 'serif'],
+        sans: ['Inter', '-apple-system', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -78,23 +82,23 @@ export default {
         },
         "drift": {
           "0%, 100%": { transform: "translate(0, 0) rotate(0deg)" },
-          "33%": { transform: "translate(25px, -20px) rotate(3deg)" },
-          "66%": { transform: "translate(-20px, 15px) rotate(-3deg)" },
+          "33%": { transform: "translate(30px, -25px) rotate(2deg)" },
+          "66%": { transform: "translate(-25px, 20px) rotate(-2deg)" },
         },
         "drift-slow": {
           "0%, 100%": { transform: "translate(0, 0) rotate(0deg)" },
-          "33%": { transform: "translate(-18px, 22px) rotate(4deg)" },
-          "66%": { transform: "translate(20px, -18px) rotate(-4deg)" },
+          "33%": { transform: "translate(-22px, 28px) rotate(3deg)" },
+          "66%": { transform: "translate(25px, -22px) rotate(-3deg)" },
         },
         "drift-slower": {
           "0%, 100%": { transform: "translate(0, 0) rotate(0deg)" },
-          "50%": { transform: "translate(15px, -25px) rotate(5deg)" },
+          "50%": { transform: "translate(18px, -30px) rotate(4deg)" },
         },
         "drift-fast": {
           "0%, 100%": { transform: "translate(0, 0) rotate(0deg)" },
-          "25%": { transform: "translate(20px, -15px) rotate(2deg)" },
-          "50%": { transform: "translate(-15px, 20px) rotate(-2deg)" },
-          "75%": { transform: "translate(18px, 10px) rotate(3deg)" },
+          "25%": { transform: "translate(25px, -18px) rotate(2deg)" },
+          "50%": { transform: "translate(-18px, 25px) rotate(-2deg)" },
+          "75%": { transform: "translate(22px, 12px) rotate(3deg)" },
         },
         "fade-up": {
           from: { opacity: "0", transform: "translateY(30px)" },
@@ -108,13 +112,13 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "gradient-shift": "gradient-shift 25s ease-in-out infinite",
-        "drift": "drift 35s ease-in-out infinite",
-        "drift-slow": "drift-slow 40s ease-in-out infinite",
-        "drift-slower": "drift-slower 30s ease-in-out infinite",
-        "drift-fast": "drift-fast 25s ease-in-out infinite",
-        "fade-up": "fade-up 0.6s ease-out",
-        "pulse-glow": "pulse-glow 3s ease-in-out infinite",
+        "gradient-shift": "gradient-shift 30s ease-in-out infinite",
+        "drift": "drift 80s ease-in-out infinite",
+        "drift-slow": "drift-slow 90s ease-in-out infinite",
+        "drift-slower": "drift-slower 100s ease-in-out infinite",
+        "drift-fast": "drift-fast 70s ease-in-out infinite",
+        "fade-up": "fade-up 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+        "pulse-glow": "pulse-glow 4s ease-in-out infinite",
       },
     },
   },

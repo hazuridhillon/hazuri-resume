@@ -41,8 +41,8 @@ export const Hero = () => {
             opacity: 0, 
             animationFillMode: 'forwards',
             fontWeight: 900,
-            color: isScrolling ? undefined : 'hsl(0, 70%, 65%)',
-            textShadow: isScrolling ? '0 0 40px hsl(0 70% 65% / 0.4)' : 'none',
+            color: isScrolling ? undefined : 'hsl(348, 54%, 47%)',
+            textShadow: isScrolling ? '0 0 40px hsl(332 58% 53% / 0.4)' : 'none',
           }}
         >
           HAZURI K.
@@ -56,8 +56,10 @@ export const Hero = () => {
             animationDelay: '0.3s', 
             opacity: 0, 
             animationFillMode: 'forwards', 
-            color: 'hsl(280, 30%, 35%)',
+            color: 'hsl(306, 23%, 26%)',
             lineHeight: '1.5',
+            fontStyle: 'italic',
+            fontFamily: 'Fraunces, Georgia, serif',
           }}
         >
           Tech Entrepreneur × Fashion Innovator × AI Strategist

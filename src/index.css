@@ -1,71 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* High-Fashion Editorial Portfolio Design System */
+/* Vintage Editorial Portfolio Design System */
 
 @layer base {
   :root {
-    /* Base Colors - Warm neutral palette */
-    --background: 15 25% 95%;
-    --foreground: 280 20% 20%;
+    /* New Color Palette - Vintage Editorial */
+    --orchid-whisper: 332 58% 53%;     /* #CB438B */
+    --crimson-velvet: 348 54% 47%;     /* #BF3556 */
+    --mossy-stone: 55 24% 35%;         /* #6C6A43 */
+    --mulberry-shadow: 306 23% 26%;    /* #4D3449 */
+    --pearl-tint: 44 100% 90%;         /* #FFF0D2 */
+    --cream: 28 42% 70%;               /* #E2C5AE */
+    --blush: 338 49% 78%;              /* #E5ACBF */
 
-    /* Lavender → Red → Purple Gradient Tokens */
-    --lavender: 270 55% 85%;
-    --blush-red: 0 70% 75%;
-    --soft-purple: 280 50% 85%;
-    --electric-blue: 220 85% 65%;
-    --lilac: 275 50% 88%;
-
+    /* Base Colors */
+    --background: 44 100% 90%;         /* Pearl Tint */
+    --foreground: 306 23% 26%;         /* Mulberry Shadow for text */
+    
     /* Primary brand colors */
-    --primary: 0 70% 55%;
+    --primary: 332 58% 53%;            /* Orchid Whisper */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 0 70% 65%;
-    --secondary-foreground: 280 20% 20%;
+    --secondary: 348 54% 47%;          /* Crimson Velvet */
+    --secondary-foreground: 0 0% 100%;
 
     /* Card backgrounds */
-    --card: 0 0% 98%;
-    --card-foreground: 280 15% 25%;
+    --card: 44 100% 90%;               /* Pearl Tint */
+    --card-foreground: 306 23% 26%;    /* Mulberry Shadow */
 
     /* Muted elements */
-    --muted: 15 15% 90%;
-    --muted-foreground: 280 20% 35%;
+    --muted: 28 42% 70%;               /* Cream */
+    --muted-foreground: 55 24% 35%;    /* Mossy Stone */
 
     /* Accent colors */
-    --accent: 270 70% 75%;
+    --accent: 55 24% 35%;              /* Mossy Stone */
     --accent-foreground: 0 0% 100%;
 
     /* Borders and inputs */
-    --border: 280 15% 88%;
-    --input: 280 15% 88%;
-    --ring: 280 65% 60%;
+    --border: 55 24% 35%;              /* Mossy Stone at 30% opacity */
+    --input: 55 24% 35%;
+    --ring: 332 58% 53%;               /* Orchid Whisper */
 
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(270, 55%, 82%) 0%, hsl(0, 70%, 75%) 50%, hsl(280, 50%, 83%) 100%);
-    --gradient-chip: linear-gradient(120deg, hsl(270, 55%, 82%), hsl(0, 70%, 75%));
-    --gradient-border: linear-gradient(135deg, hsl(270, 55%, 82%), hsl(0, 70%, 75%), hsl(280, 50%, 83%));
-    --gradient-text: linear-gradient(135deg, hsl(280, 55%, 75%), hsl(0, 70%, 65%));
-    --gradient-bg-flow: linear-gradient(180deg, 
-      hsl(0, 70%, 85%) 0%, 
-      hsl(270, 50%, 90%) 25%,
-      hsl(280, 45%, 89%) 50%,
-      hsl(270, 50%, 90%) 75%,
-      hsl(0, 70%, 85%) 100%);
+    /* Destructive */
+    --destructive: 348 54% 47%;        /* Crimson Velvet */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Popover */
+    --popover: 44 100% 90%;
+    --popover-foreground: 306 23% 26%;
+
+    /* Sidebar (if needed) */
+    --sidebar-background: 44 100% 90%;
+    --sidebar-foreground: 306 23% 26%;
+    --sidebar-primary: 332 58% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 42% 70%;
+    --sidebar-accent-foreground: 306 23% 26%;
+    --sidebar-border: 55 24% 35%;
+    --sidebar-ring: 332 58% 53%;
+
+    /* Gradients - Vintage Editorial */
+    --gradient-hero: linear-gradient(180deg, hsl(44, 100%, 90%) 0%, hsl(332, 58%, 83%) 100%);
+    --gradient-button: linear-gradient(120deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
+    --gradient-text: linear-gradient(135deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
+    --gradient-card: linear-gradient(135deg, hsl(44, 100%, 90%) 0%, hsl(28, 42%, 85%) 100%);
     
-    /* Shadows */
-    --shadow-card: 0 8px 32px -8px hsl(280 30% 50% / 0.12);
-    --shadow-card-hover: 0 16px 48px -12px hsl(280 40% 45% / 0.18);
-    --shadow-glow: 0 0 40px hsl(270 70% 75% / 0.25);
-    --shadow-chip: 0 8px 24px hsl(280 60% 70% / 0.35);
+    /* Shadows - Warm vintage shadows */
+    --shadow-card: 0 8px 32px -8px hsl(306 23% 26% / 0.1);
+    --shadow-card-hover: 0 16px 48px -12px hsl(306 23% 26% / 0.15);
+    --shadow-glow: 0 0 30px hsl(332 58% 53% / 0.25);
+    --shadow-chip: 0 8px 24px hsl(332 58% 53% / 0.3);
 
-    /* Animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* Animations - More elegant timing */
+    --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-color: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --radius: 1.25rem;
+    --radius: 2rem; /* More rounded for capsule shapes */
   }
 }
 
@@ -76,7 +88,7 @@
 
   body {
     @apply text-foreground;
-    font-family: 'Space Grotesk', -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     font-feature-settings: 'kern' 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -86,7 +98,7 @@
     line-height: 1.6;
   }
 
-  /* Animated flowing gradient background */
+  /* Animated flowing gradient background - Vintage warm tones */
   body::after {
     content: '';
     position: fixed;
@@ -96,18 +108,18 @@
     height: 100%;
     z-index: -2;
     background: 
-      radial-gradient(circle at 20% 30%, hsl(0, 65%, 96%) 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, hsl(0, 60%, 97%) 0%, transparent 35%),
-      radial-gradient(circle at 40% 80%, hsl(0, 55%, 95%) 0%, transparent 38%),
-      radial-gradient(circle at 90% 70%, hsl(0, 63%, 96%) 0%, transparent 32%),
-      radial-gradient(circle at 50% 50%, hsl(0, 50%, 97%) 0%, transparent 50%),
+      radial-gradient(circle at 20% 30%, hsl(332, 58%, 88%) 0%, transparent 40%),
+      radial-gradient(circle at 80% 20%, hsl(28, 42%, 85%) 0%, transparent 35%),
+      radial-gradient(circle at 40% 80%, hsl(338, 49%, 85%) 0%, transparent 38%),
+      radial-gradient(circle at 90% 70%, hsl(44, 100%, 92%) 0%, transparent 32%),
+      radial-gradient(circle at 50% 50%, hsl(332, 40%, 90%) 0%, transparent 50%),
       linear-gradient(180deg, 
-        hsl(0, 55%, 97%) 0%, 
-        hsl(0, 50%, 96%) 20%,
-        hsl(280, 30%, 97%) 40%,
-        hsl(0, 45%, 95%) 60%,
-        hsl(280, 35%, 97%) 80%,
-        hsl(0, 53%, 96%) 100%);
+        hsl(44, 100%, 90%) 0%, 
+        hsl(28, 42%, 88%) 20%,
+        hsl(338, 49%, 90%) 40%,
+        hsl(44, 100%, 92%) 60%,
+        hsl(332, 48%, 88%) 80%,
+        hsl(44, 100%, 90%) 100%);
     background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 200%;
     animation: gradient-flow 60s ease-in-out infinite;
   }
@@ -118,13 +130,14 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -0.01em;
     line-height: 1.2;
   }
 
-  /* Film grain overlay */
+  /* Film grain overlay - softer for vintage feel */
   body::before {
     content: '';
     position: fixed;
@@ -134,16 +147,16 @@
     height: 100%;
     pointer-events: none;
     z-index: 9999;
-    opacity: 0.35;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.5' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.25;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='3.5' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.5'/%3E%3C/svg%3E");
     mix-blend-mode: overlay;
   }
 }
 
 @layer components {
-  /* Gradient text */
+  /* Gradient text - Orchid to Crimson */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(280, 55%, 75%), hsl(0, 70%, 65%));
+    background: linear-gradient(135deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -151,22 +164,23 @@
 
   .gradient-outline-text {
     -webkit-text-stroke: 3px transparent;
-    -webkit-text-fill-color: hsl(0, 70%, 82%);
-    background: linear-gradient(135deg, hsl(0, 70%, 60%), hsl(0, 70%, 70%));
+    -webkit-text-fill-color: hsl(332, 58%, 75%);
+    background: linear-gradient(135deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
     -webkit-background-clip: text;
     background-clip: text;
-    filter: drop-shadow(0 0 20px hsl(0 70% 65% / 0.4));
+    filter: drop-shadow(0 0 40px hsl(332 58% 53% / 0.4));
   }
 
-  /* Gradient chip */
+  /* Gradient chip - Elegant capsules */
   .gradient-chip {
     @apply inline-flex items-center gap-2 px-8 py-4 rounded-full;
-    background: linear-gradient(120deg, hsl(0, 70%, 65%), hsl(0, 70%, 70%), hsl(0, 65%, 67%));
+    background: linear-gradient(120deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
     color: white;
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: 0.01em;
-    box-shadow: 0 8px 24px hsl(0 70% 65% / 0.4), inset 0 1px 0 hsl(0 0% 100% / 0.3);
+    box-shadow: 0 8px 24px hsl(332 58% 53% / 0.35), inset 0 1px 0 hsl(0 0% 100% / 0.25);
+    border: 1px solid hsl(306 23% 26% / 0.2);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
@@ -177,7 +191,7 @@
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: linear-gradient(120deg, hsl(0, 70%, 70%), hsl(0, 75%, 73%), hsl(0, 70%, 71%));
+    background: linear-gradient(120deg, hsl(306, 23%, 26%), hsl(348, 54%, 40%));
     opacity: 0;
     transition: var(--transition-smooth);
     z-index: 0;
@@ -194,52 +208,56 @@
 
   .gradient-chip:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 32px hsl(0 70% 65% / 0.6), inset 0 1px 0 hsl(0 0% 100% / 0.4);
+    box-shadow: 0 12px 32px hsl(332 58% 53% / 0.5), 
+                0 0 40px hsl(332 58% 53% / 0.3),
+                inset 0 1px 0 hsl(0 0% 100% / 0.3);
   }
 
   /* Section header with hover gradient */
   .section-header {
-    color: hsl(280, 30%, 25%);
+    color: hsl(306, 23%, 26%);
     transition: var(--transition-smooth);
     position: relative;
+    font-style: italic;
   }
 
   .section-header:hover {
-    background: linear-gradient(135deg, hsl(0, 70%, 55%), hsl(0, 70%, 60%));
+    background: linear-gradient(135deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 2px 12px hsl(0 70% 65% / 0.4));
-    transform: translateX(4px);
+    filter: drop-shadow(0 2px 12px hsl(332 58% 53% / 0.4));
+    transform: translateY(-2px);
   }
 
   /* Subheading with hover gradient */
   .subheading-hover {
-    color: hsl(280, 30%, 30%);
+    color: hsl(55, 24%, 35%);
     transition: var(--transition-smooth);
     cursor: default;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
   }
 
   .subheading-hover:hover {
-    background: linear-gradient(135deg, hsl(0, 70%, 50%), hsl(0, 70%, 60%));
+    background: linear-gradient(135deg, hsl(348, 54%, 47%), hsl(332, 58%, 53%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 
-  /* Gradient elevated card */
+  /* Gradient elevated card - Vintage editorial */
   .gradient-card {
     background: linear-gradient(135deg, 
-      hsl(0, 70%, 95%) 0%, 
-      hsl(270, 70%, 94%) 50%,
-      hsl(280, 65%, 93%) 100%);
+      hsl(44, 100%, 90%) 0%, 
+      hsl(28, 42%, 85%) 100%);
     @apply rounded-3xl p-8;
     box-shadow: 
-      0 12px 40px -10px hsl(280 40% 60% / 0.15),
-      inset 0 1px 2px hsl(0 0% 100% / 0.5),
-      inset 0 -1px 3px hsl(280 40% 70% / 0.1);
-    border: 1px solid hsl(280 60% 88%);
+      0 12px 40px -10px hsl(306 23% 26% / 0.12),
+      inset 0 1px 2px hsl(0 0% 100% / 0.4);
+    border: 1px solid hsl(55 24% 35% / 0.3);
     transition: var(--transition-smooth);
     position: relative;
     backdrop-filter: blur(10px);
@@ -248,17 +266,80 @@
   .gradient-card::before {
     content: '';
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
     border-radius: 1.5rem;
-    background: radial-gradient(circle at top left, hsl(270 70% 85% / 0.15), transparent 50%);
+    background: radial-gradient(circle at top left, hsl(338 49% 78% / 0.2), transparent 60%);
     pointer-events: none;
   }
 
   .gradient-card:hover {
     transform: translateY(-6px);
     box-shadow: 
-      0 20px 60px -12px hsl(280 50% 60% / 0.25),
-      inset 0 1px 3px hsl(0 0% 100% / 0.6),
-      inset 0 -1px 4px hsl(280 40% 70% / 0.15);
+      0 20px 60px -12px hsl(306 23% 26% / 0.18),
+      inset 0 1px 3px hsl(0 0% 100% / 0.5);
+  }
+
+  /* Skill chips - Vintage capsule style */
+  .skill-chip {
+    @apply inline-flex items-center px-6 py-3 rounded-full;
+    background: hsl(44, 100%, 90%);
+    border: 1px solid hsl(332 58% 53% / 0.4);
+    color: hsl(306, 23%, 26%);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition-smooth);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .skill-chip:hover {
+    background: linear-gradient(120deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
+    color: white;
+    border-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px hsl(332 58% 53% / 0.4);
+  }
+
+  /* Interest badges */
+  .interest-badge {
+    @apply inline-flex items-center px-5 py-2 rounded-full;
+    background: hsl(28, 42%, 70%);
+    border: 1px solid hsl(55 24% 35% / 0.5);
+    color: hsl(306, 23%, 26%);
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .interest-badge:hover {
+    border-color: hsl(348 54% 47%);
+    color: hsl(348, 54%, 47%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px hsl(348 54% 47% / 0.2);
+  }
+
+  /* Notable achievement card */
+  .notable-card {
+    background: linear-gradient(135deg, hsl(338, 49%, 85%) 0%, hsl(44, 100%, 90%) 100%);
+    border: 2px solid hsl(332 58% 53% / 0.4);
+    @apply rounded-3xl p-6;
+    box-shadow: 0 12px 40px -10px hsl(332 58% 53% / 0.25);
+    transition: var(--transition-smooth);
+  }
+
+  .notable-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 50px -12px hsl(332 58% 53% / 0.35);
+    border-color: hsl(332 58% 53% / 0.6);
+  }
+
+  /* Decorative divider */
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(55 24% 35% / 0.3), transparent);
+    margin: 4rem 0;
   }
 }

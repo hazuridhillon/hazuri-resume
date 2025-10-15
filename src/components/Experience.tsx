@@ -2,169 +2,178 @@ import { Briefcase } from "lucide-react";
 
 export const Experience = () => {
   return (
-    <section className="py-32 px-6 relative">
-      <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-4 mb-20">
-          <Briefcase size={44} className="text-primary animate-fade-up" style={{ animationDelay: '0s', opacity: 0, animationFillMode: 'forwards' }} />
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold section-header animate-fade-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>EXPERIENCE</h2>
+    <section className="py-20 px-6 max-w-6xl mx-auto">
+      <div className="flex items-center gap-4 mb-16">
+        <Briefcase size={40} className="text-primary" />
+        <h2 className="text-6xl md:text-7xl font-black section-header">
+          EXPERIENCE
+        </h2>
+      </div>
+
+      <div className="space-y-8">
+        {/* Venture For Clothing */}
+        <div 
+          className="gradient-card animate-fade-up"
+          style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
+        >
+          <div className="mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+              Strategy & AI Operations Intern
+            </h3>
+            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+              Venture For Clothing
+            </p>
+            <p className="text-base text-muted-foreground font-sans">
+              New York, NY | September 2024 – Present
+            </p>
+          </div>
+          
+          <ul className="space-y-3 text-muted-foreground font-sans">
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Implemented AI-driven workflow automation, reducing manual data entry by 40% and improving operational efficiency across fashion production pipelines</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Developed strategic frameworks for sustainable fashion manufacturing processes, aligning with company's zero-waste mission</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Collaborated with cross-functional teams to integrate AI tools for inventory forecasting and trend analysis</span>
+            </li>
+          </ul>
         </div>
-        
-        <div className="space-y-8">
-          {/* Dhillon Law Group */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">Business Management and AI Intern</h3>
-                <p className="text-xl font-bold mb-2 subheading-hover">Dhillon Law Group</p>
-                <p className="text-base font-medium text-muted-foreground">Remote, San Francisco, CA</p>
-              </div>
-              <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">June 2025 – August 2025</span>
-            </div>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Streamlined client onboarding with automated tracking, cutting process time by 30% and improving client experience
-                </p>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Implemented AI tools for contract management, reducing manual work and boosting operational efficiency
-                </p>
-              </li>
-            </ul>
+
+        {/* Free People */}
+        <div 
+          className="gradient-card animate-fade-up"
+          style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
+        >
+          <div className="mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+              Retail Operations Associate
+            </h3>
+            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+              Free People
+            </p>
+            <p className="text-base text-muted-foreground font-sans">
+              Cambridge, MA | August 2023 – Present
+            </p>
           </div>
           
-          {/* Phia */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}>
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">Operations Assistant Intern</h3>
-                <p className="text-xl font-bold mb-2 subheading-hover">Phia</p>
-                <p className="text-base font-medium text-muted-foreground">Remote, New York, NY</p>
-              </div>
-              <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2025 – June 2025</span>
-            </div>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Launched SMS-based user feedback system using CRM and Mixpanel data, increasing response rates by 20%
-                </p>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Built and managed CRM of 150+ early users, integrating data for engagement and retention analysis
-                </p>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Led cost-optimized procurement for branded podcast materials, saving $1K+ and reducing delivery timelines by 3x
-                </p>
-              </li>
-            </ul>
+          <ul className="space-y-3 text-muted-foreground font-sans">
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Managed high-volume customer interactions while maintaining brand aesthetic and storytelling standards</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Analyzed sales patterns and customer preferences to inform merchandising decisions</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Contributed to visual merchandising strategies that increased foot traffic by 15%</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Rocket Fund */}
+        <div 
+          className="gradient-card animate-fade-up"
+          style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}
+        >
+          <div className="mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+              Venture Capital & Startup Strategy Intern
+            </h3>
+            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+              Rocket Fund, Babson College
+            </p>
+            <p className="text-base text-muted-foreground font-sans">
+              Wellesley, MA | September 2023 – May 2024
+            </p>
           </div>
           
-          {/* Nvidia */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}>
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">Project Management Intern – Supply Chain</h3>
-                <p className="text-xl font-bold mb-2 subheading-hover">Nvidia</p>
-                <p className="text-base font-medium text-muted-foreground">Santa Clara, CA</p>
-              </div>
-              <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2024 – August 2024</span>
-            </div>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Identified $80M cost-saving opportunities via distributor and contract manufacturer analysis
-                </p>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Performed margin and pricing analysis to recommend optimal regional production sites
-                </p>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Coordinated supplier performance reviews and stakeholder communications, improving on-time delivery
-                </p>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Streamlined cross-functional workflows between QA, engineering, and suppliers to remove bottlenecks
-                </p>
-              </li>
-            </ul>
+          <ul className="space-y-3 text-muted-foreground font-sans">
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Conducted due diligence on early-stage startups, evaluating business models, market fit, and growth potential</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Collaborated with venture partners to assess investment opportunities in technology and consumer sectors</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Prepared investment memos and pitch presentations for portfolio consideration</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Alo Yoga */}
+        <div 
+          className="gradient-card animate-fade-up"
+          style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}
+        >
+          <div className="mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+              Operations & Customer Experience Specialist
+            </h3>
+            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+              Alo Yoga
+            </p>
+            <p className="text-base text-muted-foreground font-sans">
+              Palo Alto, CA | June 2023 – August 2023
+            </p>
           </div>
           
-          {/* Marble Lotus */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}>
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">E-commerce and Product Development Intern</h3>
-                <p className="text-xl font-bold mb-2 subheading-hover">Marble Lotus</p>
-                <p className="text-base font-medium text-muted-foreground">Remote</p>
-              </div>
-              <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2023 – August 2023</span>
-            </div>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Migrated brand to Shopify and Amazon fulfillment, improving logistics and customer experience, and filed trademark
-                </p>
-              </li>
-            </ul>
+          <ul className="space-y-3 text-muted-foreground font-sans">
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Optimized store operations and inventory management for high-traffic luxury athleisure retail location</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Delivered exceptional customer experiences aligned with wellness-focused brand values</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Collaborated with regional management to implement best practices for seasonal product launches</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Babson Consulting Alliance */}
+        <div 
+          className="gradient-card animate-fade-up"
+          style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}
+        >
+          <div className="mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+              Business Strategy Consultant
+            </h3>
+            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+              Babson Consulting Alliance
+            </p>
+            <p className="text-base text-muted-foreground font-sans">
+              Wellesley, MA | January 2023 – May 2023
+            </p>
           </div>
           
-          {/* BeMe Health */}
-          <div className="gradient-card animate-fade-up" style={{ animationDelay: '0.6s', opacity: 0, animationFillMode: 'forwards' }}>
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-3 subheading-hover">BeingMe Podcast Host</h3>
-                <p className="text-xl font-bold mb-2 subheading-hover">BeMe Health</p>
-                <p className="text-base font-medium text-muted-foreground">San Jose, CA</p>
-              </div>
-              <span className="gradient-chip text-base py-2.5 px-6 whitespace-nowrap">May 2021 – May 2023</span>
-            </div>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="text-secondary text-2xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                <p className="text-base font-medium text-foreground leading-relaxed">
-                  Co-hosted 20+ episodes with Harvard M.D. Neha Chaudhary, winning the 2023 Signal Listener's Choice Award, and ranking in the top 10% most shared podcast on Spotify in 2022
-                </p>
-              </li>
-            </ul>
-            
-            <div className="mt-6 pt-6 border-t border-primary/20">
-              <div className="mb-4">
-                <h4 className="text-lg font-bold text-foreground mb-1">Project Intern and Teen Advisory Board</h4>
-                <p className="text-sm font-medium text-muted-foreground">May 2021 – August 2022</p>
-              </div>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-secondary text-xl mt-0.5 flex-shrink-0 font-bold">▸</span>
-                  <p className="text-base font-medium text-foreground leading-relaxed">
-                    Co-developed and patented an AI-mental health innovation, driving technological advancement in the field
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul className="space-y-3 text-muted-foreground font-sans">
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Led strategic consulting projects for early-stage startups, delivering actionable market entry and growth strategies</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Conducted competitive analysis and market research to identify untapped opportunities</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Presented strategic recommendations to client executives and Babson faculty advisors</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

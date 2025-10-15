@@ -1,31 +1,32 @@
-import { Heart, Star, Flower, Circle } from "lucide-react";
+import { Heart, Star, Sparkles, Circle, Flower2, Hexagon } from "lucide-react";
 
 interface ShapeProps {
-  type: "heart" | "star" | "flower" | "circle";
+  type: "heart" | "star" | "sparkles" | "circle" | "flower" | "hexagon";
   className?: string;
   size?: number;
   style?: React.CSSProperties;
 }
 
 const Shape = ({ type, className = "", size = 48, style }: ShapeProps) => {
-  const Icon = type === "heart" ? Heart : type === "star" ? Star : type === "circle" ? Circle : Flower;
-  
+  const icons = {
+    heart: Heart,
+    star: Star,
+    sparkles: Sparkles,
+    circle: Circle,
+    flower: Flower2,
+    hexagon: Hexagon,
+  };
+
+  const Icon = icons[type];
+
   return (
-    <div 
-      className={`absolute opacity-[0.08] ${className}`} 
-      style={{ 
-        filter: 'blur(24px)',
-        ...style 
-      }}
-    >
-      <Icon 
-        size={size} 
-        fill="url(#gradient-shape)" 
-        className="text-transparent"
-        style={{
-          stroke: 'url(#gradient-shape)',
-          strokeWidth: 1
-        }}
+    <div className={`absolute ${className}`} style={style}>
+      <Icon
+        size={size}
+        className="opacity-25 blur-[40px]"
+        strokeWidth={1.5}
+        fill="url(#vintage-gradient)"
+        stroke="url(#vintage-gradient)"
       />
     </div>
   );
@@ -34,55 +35,55 @@ const Shape = ({ type, className = "", size = 48, style }: ShapeProps) => {
 export const GeometricShapes = () => {
   return (
     <>
-      <svg width="0" height="0" style={{ position: 'absolute' }}>
+      {/* SVG gradient definition for vintage editorial colors */}
+      <svg width="0" height="0" className="hidden">
         <defs>
-          <linearGradient id="gradient-shape" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="hsl(0, 70%, 70%)" />
-            <stop offset="50%" stopColor="hsl(0, 70%, 73%)" />
-            <stop offset="100%" stopColor="hsl(0, 65%, 71%)" />
+          <linearGradient id="vintage-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="hsl(332, 58%, 53%)" stopOpacity="0.3" />
+            <stop offset="50%" stopColor="hsl(348, 54%, 47%)" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="hsl(338, 49%, 78%)" stopOpacity="0.2" />
           </linearGradient>
         </defs>
       </svg>
-      
-      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        {/* Top section - Hero area */}
-        <Shape type="heart" className="top-[5%] left-[8%] animate-drift" size={64} />
-        <Shape type="star" className="top-[12%] right-[15%] animate-drift-slow" size={58} />
-        <Shape type="flower" className="top-[8%] left-[40%] animate-drift-slower" size={70} />
-        <Shape type="circle" className="top-[15%] right-[35%] animate-drift-fast" size={52} />
-        <Shape type="heart" className="top-[18%] left-[22%] animate-drift-slow" size={48} style={{ opacity: 0.06 }} />
+
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        {/* Orchid Whisper shapes */}
+        <Shape type="heart" size={180} className="top-[12%] left-[8%] animate-drift-slow" />
+        <Shape type="star" size={120} className="top-[25%] right-[15%] animate-drift" />
+        <Shape type="flower" size={160} className="top-[55%] left-[12%] animate-drift-slower" />
+        <Shape type="sparkles" size={100} className="top-[70%] right-[20%] animate-drift-fast" />
         
-        {/* Upper-middle section */}
-        <Shape type="star" className="top-[25%] left-[12%] animate-drift-slower" size={56} />
-        <Shape type="flower" className="top-[28%] right-[10%] animate-drift" size={62} />
-        <Shape type="circle" className="top-[32%] left-[45%] animate-drift-fast" size={50} style={{ opacity: 0.07 }} />
-        <Shape type="heart" className="top-[30%] right-[28%] animate-drift-slow" size={54} />
+        {/* Crimson Velvet accents */}
+        <Shape type="circle" size={200} className="top-[40%] right-[10%] animate-drift-slow" />
+        <Shape type="hexagon" size={140} className="top-[80%] left-[25%] animate-drift" />
         
-        {/* Middle section */}
-        <Shape type="flower" className="top-[42%] left-[18%] animate-drift-fast" size={68} />
-        <Shape type="star" className="top-[45%] right-[20%] animate-drift" size={60} />
-        <Shape type="heart" className="top-[48%] left-[50%] animate-drift-slower" size={56} style={{ opacity: 0.09 }} />
-        <Shape type="circle" className="top-[50%] right-[8%] animate-drift-slow" size={52} />
-        <Shape type="flower" className="top-[52%] left-[8%] animate-drift" size={58} />
+        {/* Blush highlights */}
+        <Shape type="heart" size={110} className="top-[15%] right-[35%] animate-drift-slower" />
+        <Shape type="star" size={90} className="top-[45%] left-[40%] animate-drift-fast" />
+        <Shape type="flower" size={130} className="top-[65%] right-[45%] animate-drift" />
         
-        {/* Lower-middle section */}
-        <Shape type="star" className="top-[60%] right-[25%] animate-drift-slow" size={62} />
-        <Shape type="heart" className="top-[62%] left-[25%] animate-drift-fast" size={54} />
-        <Shape type="circle" className="top-[65%] right-[40%] animate-drift-slower" size={50} style={{ opacity: 0.08 }} />
-        <Shape type="flower" className="top-[68%] left-[42%] animate-drift" size={64} />
+        {/* Mossy Stone organic shapes */}
+        <Shape type="circle" size={150} className="top-[8%] left-[50%] animate-drift-slow" 
+          style={{ 
+            filter: 'blur(40px)', 
+            opacity: 0.2,
+            fill: 'hsl(55, 24%, 35%)',
+            stroke: 'hsl(55, 24%, 35%)' 
+          }} 
+        />
+        <Shape type="hexagon" size={95} className="top-[88%] right-[12%] animate-drift-slower"
+          style={{ 
+            filter: 'blur(35px)', 
+            opacity: 0.22,
+            fill: 'hsl(55, 24%, 35%)',
+            stroke: 'hsl(55, 24%, 35%)' 
+          }} 
+        />
         
-        {/* Bottom section */}
-        <Shape type="heart" className="top-[75%] right-[18%] animate-drift-slow" size={58} />
-        <Shape type="star" className="top-[78%] left-[15%] animate-drift-slower" size={56} />
-        <Shape type="circle" className="top-[80%] right-[32%] animate-drift-fast" size={52} />
-        <Shape type="flower" className="top-[82%] left-[38%] animate-drift" size={60} style={{ opacity: 0.07 }} />
-        <Shape type="heart" className="top-[85%] right-[12%] animate-drift-slow" size={54} />
-        
-        {/* Extra scattered shapes for natural look */}
-        <Shape type="star" className="top-[35%] left-[30%] animate-drift-fast" size={46} style={{ opacity: 0.06 }} />
-        <Shape type="circle" className="top-[55%] right-[15%] animate-drift" size={48} style={{ opacity: 0.06 }} />
-        <Shape type="flower" className="top-[72%] left-[28%] animate-drift-slower" size={52} style={{ opacity: 0.07 }} />
-        <Shape type="heart" className="top-[90%] left-[48%] animate-drift-slow" size={50} style={{ opacity: 0.08 }} />
+        {/* Additional organic elements */}
+        <Shape type="sparkles" size={75} className="top-[32%] left-[70%] animate-drift-fast" />
+        <Shape type="flower" size={115} className="top-[50%] right-[60%] animate-drift" />
+        <Shape type="heart" size={95} className="top-[75%] left-[65%] animate-drift-slow" />
       </div>
     </>
   );
