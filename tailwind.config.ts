@@ -108,6 +108,24 @@ export default {
           "0%, 100%": { opacity: "0.4" },
           "50%": { opacity: "0.7" },
         },
+        "letter-tumble": {
+          "0%": { 
+            opacity: "0",
+            transform: "translateY(-50px) rotate(-15deg) scale(0.8)",
+            filter: "blur(2px)",
+          },
+          "60%": {
+            transform: "translateY(5px) rotate(3deg) scale(1.02)",
+          },
+          "80%": {
+            transform: "translateY(-2px) rotate(-1deg) scale(0.99)",
+          },
+          "100%": { 
+            opacity: "1",
+            transform: "translateY(0) rotate(0deg) scale(1)",
+            filter: "blur(0px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -119,6 +137,7 @@ export default {
         "drift-fast": "drift-fast 70s ease-in-out infinite",
         "fade-up": "fade-up 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
         "pulse-glow": "pulse-glow 4s ease-in-out infinite",
+        "letter-tumble": "letter-tumble 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
       },
     },
   },

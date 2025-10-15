@@ -5,6 +5,19 @@ export const Hero = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const [scrollTimeout, setScrollTimeout] = useState<NodeJS.Timeout | null>(null);
 
+  // Generate semi-random delays for letter animation (0-200ms base + variation)
+  const generateLetterDelays = () => {
+    const delays = [];
+    for (let i = 0; i < 14; i++) { // 14 letters total in "HAZURIKDHILLON"
+      const baseDelay = Math.random() * 200;
+      const variation = (Math.random() - 0.5) * 100;
+      delays.push(baseDelay + variation);
+    }
+    return delays;
+  };
+
+  const [letterDelays] = useState(() => generateLetterDelays());
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolling(true);
@@ -33,21 +46,58 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <h1 
-          className={`text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight animate-fade-up leading-none transition-all duration-300 ${
+          className={`text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight leading-none transition-all duration-300 ${
             isScrolling ? 'gradient-outline-text' : ''
           }`}
           style={{ 
-            animationDelay: '0.1s', 
-            opacity: 0, 
-            animationFillMode: 'forwards',
             fontWeight: 900,
             color: isScrolling ? undefined : 'hsl(348, 54%, 47%)',
             textShadow: isScrolling ? '0 0 40px hsl(332 58% 53% / 0.4)' : 'none',
           }}
         >
-          HAZURI K.
+          <span className="inline-block">
+            {['H','A','Z','U','R','I'].map((letter, i) => (
+              <span 
+                key={i}
+                className="inline-block animate-letter-tumble"
+                style={{
+                  animationDelay: `${letterDelays[i]}ms`,
+                  transformOrigin: 'center center',
+                  willChange: 'transform, opacity',
+                  filter: 'drop-shadow(0 10px 20px rgba(203, 67, 139, 0.2))',
+                }}
+              >
+                {letter}
+              </span>
+            ))}
+          </span>
+          <span 
+            className="inline-block animate-letter-tumble ml-4"
+            style={{
+              animationDelay: `${letterDelays[6]}ms`,
+              transformOrigin: 'center center',
+              willChange: 'transform, opacity',
+            }}
+          >
+            K.
+          </span>
           <br />
-          DHILLON
+          <span className="inline-block">
+            {['D','H','I','L','L','O','N'].map((letter, i) => (
+              <span 
+                key={i}
+                className="inline-block animate-letter-tumble"
+                style={{
+                  animationDelay: `${letterDelays[i + 7]}ms`,
+                  transformOrigin: 'center center',
+                  willChange: 'transform, opacity',
+                  filter: 'drop-shadow(0 10px 20px rgba(203, 67, 139, 0.2))',
+                }}
+              >
+                {letter}
+              </span>
+            ))}
+          </span>
         </h1>
         
         <p 
