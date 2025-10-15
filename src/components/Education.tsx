@@ -1,8 +1,6 @@
 import { GraduationCap, Sparkles } from "lucide-react";
-
 export const Education = () => {
-  return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+  return <section className="py-20 px-6 max-w-6xl mx-auto">
       <div className="flex items-center gap-4 mb-16">
         <GraduationCap size={40} className="text-primary" />
         <h2 className="text-6xl md:text-7xl font-black section-header">
@@ -12,10 +10,11 @@ export const Education = () => {
 
       <div className="space-y-8">
         {/* Babson College */}
-        <div 
-          className="gradient-card animate-fade-up"
-          style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
-        >
+        <div className="gradient-card animate-fade-up" style={{
+        animationDelay: '0.1s',
+        opacity: 0,
+        animationFillMode: 'forwards'
+      }}>
           <div className="mb-4">
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
               Babson College
@@ -50,7 +49,7 @@ export const Education = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-1">•</span>
-                  <span>Dean's List – Fall 2022, Fall 2023, Spring 2024</span>
+                  <span>Dean's List x5</span>
                 </li>
               </ul>
             </div>
@@ -76,24 +75,21 @@ export const Education = () => {
 
           <div className="mt-6 pt-6 border-t border-border/30">
             <div className="flex flex-wrap gap-2">
-              {['Technology Entrepreneurship', 'Strategic Management', 'AI Implementation', 'Fashion Business'].map((keyword, index) => (
-                <span 
-                  key={index}
-                  className="skill-chip text-sm"
-                  style={{ animationDelay: `${0.3 + index * 0.1}s` }}
-                >
+              {['Technology Entrepreneurship', 'Strategic Management', 'AI Implementation', 'Fashion Business'].map((keyword, index) => <span key={index} className="skill-chip text-sm" style={{
+              animationDelay: `${0.3 + index * 0.1}s`
+            }}>
                   {keyword}
-                </span>
-              ))}
+                </span>)}
             </div>
           </div>
         </div>
 
         {/* Stanford Online High School */}
-        <div 
-          className="gradient-card animate-fade-up"
-          style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
-        >
+        <div className="gradient-card animate-fade-up" style={{
+        animationDelay: '0.2s',
+        opacity: 0,
+        animationFillMode: 'forwards'
+      }}>
           <div className="mb-4">
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
               Stanford Online High School
@@ -127,6 +123,5 @@ export const Education = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
