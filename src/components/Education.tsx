@@ -25,47 +25,44 @@ export const Education = () => {
             <p className="text-lg md:text-xl text-muted-foreground font-sans mt-1">
               Bachelor of Science, Technology Entrepreneurship
             </p>
-            <p className="text-base text-muted-foreground font-sans">
+            <p className="text-base text-primary font-sans">
               May 2026
+            </p>
+          </div>
+
+          {/* CEA Capa Highlighted Section */}
+          <div className="bg-primary/10 border-l-4 border-primary p-4 rounded-r my-4">
+            <p className="text-primary font-sans text-sm">
+              CEA Capa - Florence, Italy (Fall 2024) - Fashion Product Development and Emerging Trends
             </p>
           </div>
 
           <ul className="space-y-2 text-muted-foreground font-sans">
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
-              <span>CEA Capa - Florence, Italy (Fall 2024) - Fashion Product Development and Emerging Trends</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>CWEL Scholar</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Dean's List</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Student Government Senator</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Kappa Kappa Gamma VP of Events</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Fashion and Sneaker Organization VP of Finance</span>
             </li>
           </ul>
 
-          <div className="mt-6 pt-6 border-t border-border/30">
-            <div className="flex flex-wrap gap-2">
-              {['Tech Operations', 'Strategic Problem Solving', 'Trend Forecasting', 'Mobile App Creation', 'Fashion Entrepreneurship'].map((keyword, index) => <span key={index} className="skill-chip text-sm" style={{
-              animationDelay: `${0.3 + index * 0.1}s`
-            }}>
-                  {keyword}
-                </span>)}
-            </div>
-          </div>
+          <p className="text-muted-foreground italic font-sans mt-6 text-sm">
+            Tech Operations, Strategic Problem Solving, Trend Forecasting, Mobile App Creation, Fashion Entrepreneurship
+          </p>
         </div>
 
         {/* Stanford Online High School */}
@@ -84,22 +81,22 @@ export const Education = () => {
             <p className="text-lg md:text-xl text-muted-foreground font-sans mt-1">
               High School Diploma
             </p>
-            <p className="text-base text-muted-foreground font-sans">
+            <p className="text-base text-primary font-sans">
               September 2018 – May 2022
             </p>
           </div>
 
           <ul className="space-y-2 text-muted-foreground font-sans">
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Community Engagement Club – Executive Director</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Fashion and Streetwear Club – President</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-primary mt-1">•</span>
+              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Post-COVID Online Education Ambassador</span>
             </li>
           </ul>
