@@ -19,63 +19,47 @@ export const Education = () => {
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
               Babson College
             </h3>
-            <p className="text-lg md:text-xl text-muted-foreground font-sans">
-              Bachelor of Science Candidate, Concentration in Technology Entrepreneurship
+            <p className="text-base text-muted-foreground font-sans">
+              Wellesley, MA
             </p>
-            <p className="text-base text-muted-foreground mt-1 font-sans">
-              Wellesley, MA | May 2026
+            <p className="text-lg md:text-xl text-muted-foreground font-sans mt-1">
+              Bachelor of Science, Technology Entrepreneurship
             </p>
-          </div>
-
-          <div className="mb-6 pb-6 border-b border-border/30">
-            <div className="flex items-center gap-2 mb-2">
-              <Sparkles size={18} className="text-primary" />
-              <p className="text-base font-semibold text-foreground font-sans">
-                Study Abroad: CEA Capa – Florence, Italy (Fall 2024)
-              </p>
-            </div>
-            <p className="text-sm text-muted-foreground ml-7 font-sans">
-              Fashion Product Development and Emerging Trends
+            <p className="text-base text-muted-foreground font-sans">
+              May 2026
             </p>
           </div>
 
-          <div className="space-y-4">
-            <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2 font-sans">Academic Excellence</h4>
-              <ul className="space-y-2 text-muted-foreground font-sans">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>CWEL Scholar – Selected for Center for Women's Entrepreneurial Leadership program</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Dean's List x5</span>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2 font-sans">Leadership & Involvement</h4>
-              <ul className="space-y-2 text-muted-foreground font-sans">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Student Government Senator – Advocate for student voices and campus initiatives</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>VP of Marketing, Babson Entrepreneurship Society – Leading marketing strategy for 500+ member organization</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>VP of Branding, South Asian Student Association – Spearheading visual identity and cultural awareness campaigns</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul className="space-y-2 text-muted-foreground font-sans">
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>CEA Capa - Florence, Italy (Fall 2024) - Fashion Product Development and Emerging Trends</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>CWEL Scholar</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>Dean's List</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>Student Government Senator</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>Kappa Kappa Gamma VP of Events</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>Fashion and Sneaker Organization VP of Finance</span>
+            </li>
+          </ul>
 
           <div className="mt-6 pt-6 border-t border-border/30">
             <div className="flex flex-wrap gap-2">
-              {['Technology Entrepreneurship', 'Strategic Management', 'AI Implementation', 'Fashion Business'].map((keyword, index) => <span key={index} className="skill-chip text-sm" style={{
+              {['Tech Operations', 'Strategic Problem Solving', 'Trend Forecasting', 'Mobile App Creation', 'Fashion Entrepreneurship'].map((keyword, index) => <span key={index} className="skill-chip text-sm" style={{
               animationDelay: `${0.3 + index * 0.1}s`
             }}>
                   {keyword}
@@ -94,33 +78,31 @@ export const Education = () => {
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
               Stanford Online High School
             </h3>
-            <p className="text-lg md:text-xl text-muted-foreground font-sans">
+            <p className="text-base text-muted-foreground font-sans">
+              Palo Alto, CA
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground font-sans mt-1">
               High School Diploma
             </p>
-            <p className="text-base text-muted-foreground mt-1 font-sans">
-              2018 – 2022
+            <p className="text-base text-muted-foreground font-sans">
+              September 2018 – May 2022
             </p>
           </div>
 
-          <div className="space-y-4">
-            <div>
-              <h4 className="text-lg font-semibold text-foreground mb-2 font-sans">Leadership Roles</h4>
-              <ul className="space-y-2 text-muted-foreground font-sans">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Executive Director, Community Engagement Club – Coordinated virtual community service initiatives</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>President, Fashion and Streetwear Club – Led discussions on fashion industry trends and sustainability</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span>
-                  <span>Post-COVID Online Education Ambassador – Advocated for virtual learning best practices</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul className="space-y-2 text-muted-foreground font-sans">
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>Community Engagement Club – Executive Director</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>Fashion and Streetwear Club – President</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary mt-1">•</span>
+              <span>Post-COVID Online Education Ambassador</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>;
