@@ -11,167 +11,192 @@ export const Experience = () => {
       </div>
 
       <div className="space-y-8">
-        {/* Venture For Clothing */}
+        {/* Dhillon Law Group */}
         <div 
           className="gradient-card animate-fade-up"
           style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
-              Strategy & AI Operations Intern
+              Business Management and AI Intern
             </h3>
             <p className="text-lg md:text-xl font-semibold text-primary font-sans">
-              Venture For Clothing
+              Dhillon Law Group
             </p>
             <p className="text-base text-muted-foreground font-sans">
-              New York, NY | September 2024 – Present
+              Remote, San Francisco, CA | June 2025 – August 2025
             </p>
           </div>
           
           <ul className="space-y-3 text-muted-foreground font-sans">
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Implemented AI-driven workflow automation, reducing manual data entry by 40% and improving operational efficiency across fashion production pipelines</span>
+              <span>Streamlined client onboarding with automated tracking, cutting process time by 30% and improving client experience</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Developed strategic frameworks for sustainable fashion manufacturing processes, aligning with company's zero-waste mission</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1 font-bold">•</span>
-              <span>Collaborated with cross-functional teams to integrate AI tools for inventory forecasting and trend analysis</span>
+              <span>Implemented AI tools for contract management, reducing manual work and boosting operational efficiency</span>
             </li>
           </ul>
         </div>
 
-        {/* Free People */}
+        {/* Phia */}
         <div 
           className="gradient-card animate-fade-up"
           style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
-              Retail Operations Associate
+              Operations Assistant Intern
             </h3>
             <p className="text-lg md:text-xl font-semibold text-primary font-sans">
-              Free People
+              Phia
             </p>
             <p className="text-base text-muted-foreground font-sans">
-              Cambridge, MA | August 2023 – Present
+              Remote, New York, NY | May 2025 – June 2025
             </p>
           </div>
           
           <ul className="space-y-3 text-muted-foreground font-sans">
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Managed high-volume customer interactions while maintaining brand aesthetic and storytelling standards</span>
+              <span>Launched SMS-based user feedback system using CRM and Mixpanel data, increasing response rates by 20%</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Analyzed sales patterns and customer preferences to inform merchandising decisions</span>
+              <span>Built and managed CRM of 150+ early users, integrating data for engagement and retention analysis</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Contributed to visual merchandising strategies that increased foot traffic by 15%</span>
+              <span>Led cost-optimized procurement for branded podcast materials, saving $1K+ and reducing delivery timelines by 3×</span>
             </li>
           </ul>
         </div>
 
-        {/* Rocket Fund */}
+        {/* Nvidia */}
         <div 
           className="gradient-card animate-fade-up"
           style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
-              Venture Capital & Startup Strategy Intern
+              Project Management Intern – Supply Chain
             </h3>
             <p className="text-lg md:text-xl font-semibold text-primary font-sans">
-              Rocket Fund, Babson College
+              Nvidia
             </p>
             <p className="text-base text-muted-foreground font-sans">
-              Wellesley, MA | September 2023 – May 2024
+              Santa Clara, CA | May 2024 – August 2024
             </p>
           </div>
           
           <ul className="space-y-3 text-muted-foreground font-sans">
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Conducted due diligence on early-stage startups, evaluating business models, market fit, and growth potential</span>
+              <span>Identified $80M cost-saving opportunities via distributor and contract manufacturer analysis</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Collaborated with venture partners to assess investment opportunities in technology and consumer sectors</span>
+              <span>Performed margin and pricing analysis to recommend optimal regional production sites</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Prepared investment memos and pitch presentations for portfolio consideration</span>
+              <span>Coordinated supplier performance reviews and stakeholder communications, improving on-time delivery</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1 font-bold">•</span>
+              <span>Streamlined cross-functional workflows between QA, engineering, and suppliers to remove bottlenecks</span>
             </li>
           </ul>
         </div>
 
-        {/* Alo Yoga */}
+        {/* Marble Lotus */}
         <div 
           className="gradient-card animate-fade-up"
           style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
-              Operations & Customer Experience Specialist
+              E-commerce and Product Development Intern
             </h3>
             <p className="text-lg md:text-xl font-semibold text-primary font-sans">
-              Alo Yoga
+              Marble Lotus
             </p>
             <p className="text-base text-muted-foreground font-sans">
-              Palo Alto, CA | June 2023 – August 2023
+              Remote | May 2023 – August 2023
             </p>
           </div>
           
           <ul className="space-y-3 text-muted-foreground font-sans">
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Optimized store operations and inventory management for high-traffic luxury athleisure retail location</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1 font-bold">•</span>
-              <span>Delivered exceptional customer experiences aligned with wellness-focused brand values</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-primary mt-1 font-bold">•</span>
-              <span>Collaborated with regional management to implement best practices for seasonal product launches</span>
+              <span>Migrated brand to Shopify and Amazon fulfillment, improving logistics and customer experience, and filed trademark</span>
             </li>
           </ul>
         </div>
 
-        {/* Babson Consulting Alliance */}
+        {/* BeMe Health - Two roles */}
         <div 
           className="gradient-card animate-fade-up"
           style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
             <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
-              Business Strategy Consultant
+              BeingMe Podcast Host
             </h3>
             <p className="text-lg md:text-xl font-semibold text-primary font-sans">
-              Babson Consulting Alliance
+              BeMe Health
             </p>
             <p className="text-base text-muted-foreground font-sans">
-              Wellesley, MA | January 2023 – May 2023
+              San Jose, CA | May 2021 – May 2023
             </p>
           </div>
           
           <ul className="space-y-3 text-muted-foreground font-sans">
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Led strategic consulting projects for early-stage startups, delivering actionable market entry and growth strategies</span>
+              <span>Co-hosted 20+ episodes with Harvard M.D. Neha Chaudhary, winning the 2023 Signal Listener's Choice Award and ranking in the top 10% most shared podcasts on Spotify in 2022</span>
             </li>
+          </ul>
+
+          <div className="mb-4 mt-8 pt-6 border-t border-border/30">
+            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+              Project Intern and Teen Advisory Board
+            </h3>
+            <p className="text-base text-muted-foreground font-sans">
+              May 2021 – August 2022
+            </p>
+          </div>
+          
+          <ul className="space-y-3 text-muted-foreground font-sans">
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Conducted competitive analysis and market research to identify untapped opportunities</span>
+              <span>Co-developed and patented an AI-mental health innovation, driving technological advancement in the field</span>
             </li>
+          </ul>
+        </div>
+
+        {/* AAPI Silicon Valley */}
+        <div 
+          className="gradient-card animate-fade-up"
+          style={{ animationDelay: '0.6s', opacity: 0, animationFillMode: 'forwards' }}
+        >
+          <div className="mb-4">
+            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+              Co-Founder and Publicity Chair
+            </h3>
+            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+              AAPI Silicon Valley
+            </p>
+            <p className="text-base text-muted-foreground font-sans">
+              Mountain View, CA | March 2021 – August 2022
+            </p>
+          </div>
+          
+          <ul className="space-y-3 text-muted-foreground font-sans">
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1 font-bold">•</span>
-              <span>Presented strategic recommendations to client executives and Babson faculty advisors</span>
+              <span>Organized youth-led advocacy events for 1000+ attendees; built website and led communications</span>
             </li>
           </ul>
         </div>

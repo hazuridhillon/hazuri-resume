@@ -78,7 +78,7 @@ export const Hero = () => {
           </a>
           
           <a 
-            href="https://linkedin.com/in/hazuri-dhillon" 
+            href="https://linkedin.com/in/hazuridhillon" 
             target="_blank" 
             rel="noopener noreferrer"
             className="gradient-chip group"

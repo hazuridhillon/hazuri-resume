@@ -21,10 +21,10 @@ export const Education = () => {
               Babson College
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground font-sans">
-              Bachelor of Science in Business Management | Concentration in Technology Entrepreneurship
+              Bachelor of Science Candidate, Concentration in Technology Entrepreneurship
             </p>
             <p className="text-base text-muted-foreground mt-1 font-sans">
-              Wellesley, MA | Expected May 2026
+              Wellesley, MA | May 2026
             </p>
           </div>
 
@@ -32,11 +32,11 @@ export const Education = () => {
             <div className="flex items-center gap-2 mb-2">
               <Sparkles size={18} className="text-primary" />
               <p className="text-base font-semibold text-foreground font-sans">
-                Study Abroad: CEA Capa in Florence, Italy (Spring 2025)
+                Study Abroad: CEA Capa – Florence, Italy (Fall 2024)
               </p>
             </div>
             <p className="text-sm text-muted-foreground ml-7 font-sans">
-              Immersive program focusing on global business practices and cultural innovation
+              Fashion Product Development and Emerging Trends
             </p>
           </div>
 
