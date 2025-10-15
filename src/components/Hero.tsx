@@ -46,13 +46,11 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
         <h1 
-          className={`text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight leading-none transition-all duration-300 ${
-            isScrolling ? 'gradient-outline-text' : ''
-          }`}
+          className="text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight leading-none"
           style={{ 
             fontWeight: 900,
-            color: isScrolling ? undefined : 'hsl(348, 54%, 47%)',
-            textShadow: isScrolling ? '0 0 40px hsl(332 58% 53% / 0.4)' : 'none',
+            color: 'hsl(348, 54%, 47%)',
+            textShadow: '0 4px 12px rgba(203, 67, 139, 0.25), 0 2px 4px rgba(0, 0, 0, 0.1)',
           }}
         >
           <span className="inline-block">
