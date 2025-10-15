@@ -8,9 +8,9 @@ export const Education = () => {
         </h2>
       </div>
 
-      <div className="space-y-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {/* Babson College */}
-        <div className="gradient-card animate-fade-up" style={{
+        <div className="gradient-card h-full animate-fade-up" style={{
         animationDelay: '0.1s',
         opacity: 0,
         animationFillMode: 'forwards'
@@ -85,7 +85,7 @@ export const Education = () => {
         </div>
 
         {/* Stanford Online High School */}
-        <div className="gradient-card animate-fade-up" style={{
+        <div className="gradient-card h-full animate-fade-up" style={{
         animationDelay: '0.2s',
         opacity: 0,
         animationFillMode: 'forwards'
