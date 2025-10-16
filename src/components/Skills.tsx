@@ -22,7 +22,7 @@ const interests = [
 
 export const Skills = () => {
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto mb-20">
+    <section className="pt-8 pb-20 px-6 max-w-6xl mx-auto mb-20">
       <div className="flex items-center gap-4 mb-16">
         <Award size={40} className="text-primary" />
         <h2 className="text-6xl md:text-7xl font-black section-header">
