@@ -115,7 +115,16 @@ export const Skills = () => {
               Notable Achievement
             </h4>
             <p className="text-base font-medium text-foreground font-sans leading-relaxed">
-              Co-Founder of AAPI Silicon Valley - Organized youth-led advocacy events for 1,000+ attendees
+              Co-Founder of{" "}
+              <a 
+                href="https://aapisiliconvalley.wixsite.com/home" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-semibold"
+              >
+                AAPI Silicon Valley
+              </a>
+              {" "}- Organized youth-led advocacy events for 1,000+ attendees
             </p>
           </div>
         </div>

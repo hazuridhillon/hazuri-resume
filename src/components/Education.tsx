@@ -16,9 +16,14 @@ export const Education = () => {
         animationFillMode: 'forwards'
       }}>
           <div className="mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <a 
+              href="https://www.babson.edu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-3xl md:text-4xl font-bold subheading-hover mb-2 hover:text-primary transition-colors inline-block"
+            >
               Babson College
-            </h3>
+            </a>
             <p className="text-base text-muted-foreground font-sans">
               Wellesley, MA
             </p>
@@ -72,9 +77,14 @@ export const Education = () => {
         animationFillMode: 'forwards'
       }}>
           <div className="mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <a 
+              href="https://ohs.stanford.edu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-3xl md:text-4xl font-bold subheading-hover mb-2 hover:text-primary transition-colors inline-block"
+            >
               Stanford Online High School
-            </h3>
+            </a>
             <p className="text-base text-muted-foreground font-sans">
               Palo Alto, CA
             </p>

@@ -17,12 +17,17 @@ export const Experience = () => {
           style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <h3 className="text-3xl md:text-4xl font-bold mb-2">
               Business Management and AI Intern
             </h3>
-            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+            <a 
+              href="https://www.dhillonlaw.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-lg md:text-xl font-semibold text-primary font-sans hover:underline cursor-pointer transition-all inline-block"
+            >
               Dhillon Law Group
-            </p>
+            </a>
             <p className="text-base text-muted-foreground font-sans">
               Remote, San Francisco, CA | June 2025 – August 2025
             </p>
@@ -46,12 +51,17 @@ export const Experience = () => {
           style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <h3 className="text-3xl md:text-4xl font-bold mb-2">
               Operations Assistant Intern
             </h3>
-            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+            <a 
+              href="https://phia.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-lg md:text-xl font-semibold text-primary font-sans hover:underline cursor-pointer transition-all inline-block"
+            >
               Phia
-            </p>
+            </a>
             <p className="text-base text-muted-foreground font-sans">
               Remote, New York, NY | May 2025 – June 2025
             </p>
@@ -79,12 +89,17 @@ export const Experience = () => {
           style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <h3 className="text-3xl md:text-4xl font-bold mb-2">
               Project Management Intern – Supply Chain
             </h3>
-            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+            <a 
+              href="https://www.nvidia.com/en-us/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-lg md:text-xl font-semibold text-primary font-sans hover:underline cursor-pointer transition-all inline-block"
+            >
               Nvidia
-            </p>
+            </a>
             <p className="text-base text-muted-foreground font-sans">
               Santa Clara, CA | May 2024 – August 2024
             </p>
@@ -116,12 +131,17 @@ export const Experience = () => {
           style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <h3 className="text-3xl md:text-4xl font-bold mb-2">
               E-commerce and Product Development Intern
             </h3>
-            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+            <a 
+              href="https://www.marble-lotus.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-lg md:text-xl font-semibold text-primary font-sans hover:underline cursor-pointer transition-all inline-block"
+            >
               Marble Lotus
-            </p>
+            </a>
             <p className="text-base text-muted-foreground font-sans">
               Remote | May 2023 – August 2023
             </p>
@@ -141,12 +161,17 @@ export const Experience = () => {
           style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="mb-4">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <h3 className="text-3xl md:text-4xl font-bold mb-2">
               BeingMe Podcast Host
             </h3>
-            <p className="text-lg md:text-xl font-semibold text-primary font-sans">
+            <a 
+              href="https://beme.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-lg md:text-xl font-semibold text-primary font-sans hover:underline cursor-pointer transition-all inline-block"
+            >
               BeMe Health
-            </p>
+            </a>
             <p className="text-base text-muted-foreground font-sans">
               San Jose, CA | May 2021 – May 2023
             </p>
@@ -160,7 +185,7 @@ export const Experience = () => {
           </ul>
 
           <div className="mb-4 mt-8 pt-6 border-t border-border/30">
-            <h3 className="text-3xl md:text-4xl font-bold subheading-hover mb-2">
+            <h3 className="text-3xl md:text-4xl font-bold mb-2">
               Project Intern and Teen Advisory Board
             </h3>
             <p className="text-base text-muted-foreground font-sans">
