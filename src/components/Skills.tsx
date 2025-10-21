@@ -1,15 +1,48 @@
 import { Award } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 const skills = [
-  "Leadership & Strategy",
-  "Intellectual Property Registration",
-  "Market/User Research",
-  "Competitive Analysis",
-  "AI Implementation",
-  "Supply Chain",
-  "E-commerce",
-  "Brand Strategy",
-  "Trend Forecasting",
+  {
+    name: "Leadership & Strategy",
+    description: "Leading student government initiatives, managing events for my sorority, and acting as COO of Babson themed card game, Oh Dam taught me how to balance creativity with execution, turning ideas into organized, well-run projects that deliver results."
+  },
+  {
+    name: "Intellectual Property Registration",
+    description: "Co-patenting an AI-driven mental health tool and handling trademark filings built a deep understanding of how innovation, design, and legal protection intersect to give ideas long lasting power."
+  },
+  {
+    name: "Market/User Research",
+    description: "Mixpanel has been my main tool for understanding how people actually use products, turning behavioral data into clear insights that improve engagement, retention, and product design."
+  },
+  {
+    name: "Competitive Analysis",
+    description: "From startup landscapes to established brands, analyzing market behavior helps identify what's missing, and how thoughtful positioning can turn a good idea into a category leader."
+  },
+  {
+    name: "AI Implementation",
+    description: "Hands-on experience introducing AI into legal and operational workflows showed how automation can save time, reduce friction, and let people focus on creative, strategic work."
+  },
+  {
+    name: "Supply Chain",
+    description: "Optimizing supplier networks and logistics revealed how small process changes can drive big cost savings and efficiency — lessons that apply to any growing business."
+  },
+  {
+    name: "E-commerce",
+    description: "Helping brands build on Shopify and launch through Amazon taught me that good online retail isn't just tech, it's aligning brand voice, product flow, and customer experience into one seamless system."
+  },
+  {
+    name: "Brand Strategy",
+    description: "Across podcasting, startups, and student organizations, strong brand work has always come down to clarity, knowing your story and making every touchpoint feel connected and real."
+  },
+  {
+    name: "Trend Forecasting",
+    description: "Studying global fashion and consumer behavior, especially while abroad in Florence, shaped how I spot early shifts in taste, culture, and tech, and use them to guide what's next."
+  }
 ];
 
 const interests = [
@@ -22,7 +55,8 @@ const interests = [
 
 export const Skills = () => {
   return (
-    <section className="pt-8 pb-20 px-6 max-w-6xl mx-auto mb-20">
+    <TooltipProvider delayDuration={200}>
+      <section className="pt-8 pb-20 px-6 max-w-6xl mx-auto mb-20">
       <div className="flex items-center gap-4 mb-16">
         <Award size={40} className="text-primary" />
         <h2 className="text-6xl md:text-7xl font-black section-header">
@@ -43,17 +77,29 @@ export const Skills = () => {
             </h3>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, index) => (
-                <span 
-                  key={skill}
-                  className="skill-chip animate-fade-up"
-                  style={{ 
-                    animationDelay: `${0.2 + index * 0.05}s`, 
-                    opacity: 0, 
-                    animationFillMode: 'forwards' 
-                  }}
-                >
-                  {skill}
-                </span>
+                <Tooltip key={skill.name}>
+                  <TooltipTrigger asChild>
+                    <span 
+                      className="skill-chip animate-fade-up cursor-help"
+                      style={{ 
+                        animationDelay: `${0.2 + index * 0.05}s`, 
+                        opacity: 0, 
+                        animationFillMode: 'forwards' 
+                      }}
+                    >
+                      {skill.name}
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent 
+                    side="top" 
+                    className="max-w-xs md:max-w-sm bg-background/95 backdrop-blur-sm border-primary/20 text-foreground p-4 shadow-lg"
+                    sideOffset={8}
+                  >
+                    <p className="text-sm leading-relaxed font-sans">
+                      {skill.description}
+                    </p>
+                  </TooltipContent>
+                </Tooltip>
               ))}
             </div>
           </div>
@@ -130,5 +176,6 @@ export const Skills = () => {
         </div>
       </div>
     </section>
+    </TooltipProvider>
   );
 };
