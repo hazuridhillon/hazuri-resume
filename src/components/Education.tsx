@@ -1,9 +1,9 @@
 import { GraduationCap, Sparkles } from "lucide-react";
 export const Education = () => {
   return <section className="pt-12 md:pt-20 pb-8 px-4 md:px-6 max-w-6xl mx-auto">
-      <div className="flex items-center gap-3 md:gap-4 mb-12 md:mb-16">
-        <GraduationCap size={32} className="text-primary md:w-10 md:h-10" />
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-black section-header">
+      <div className="flex items-center gap-2 md:gap-4 mb-12 md:mb-16 flex-wrap">
+        <GraduationCap size={28} className="text-primary md:w-10 md:h-10 flex-shrink-0" />
+        <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black section-header break-words">
           EDUCATION
         </h2>
       </div>
