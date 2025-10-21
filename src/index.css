@@ -173,17 +173,24 @@
 
   /* Gradient chip - Elegant capsules */
   .gradient-chip {
-    @apply inline-flex items-center gap-2 px-8 py-4 rounded-full;
+    @apply inline-flex items-center gap-2 px-5 py-3 rounded-full;
     background: linear-gradient(120deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
     color: white;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: 0.01em;
     box-shadow: 0 8px 24px hsl(332 58% 53% / 0.35), inset 0 1px 0 hsl(0 0% 100% / 0.25);
     border: 1px solid hsl(306 23% 26% / 0.2);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .gradient-chip {
+      @apply px-8 py-4;
+      font-size: 1rem;
+    }
   }
 
   .gradient-chip::before {
@@ -253,7 +260,7 @@
     background: linear-gradient(135deg, 
       hsl(44, 100%, 90%) 0%, 
       hsl(28, 42%, 85%) 100%);
-    @apply rounded-3xl p-8;
+    @apply rounded-2xl p-5;
     box-shadow: 
       0 12px 40px -10px hsl(306 23% 26% / 0.12),
       inset 0 1px 2px hsl(0 0% 100% / 0.4);
@@ -261,6 +268,12 @@
     transition: var(--transition-smooth), filter 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     backdrop-filter: blur(10px);
+  }
+
+  @media (min-width: 768px) {
+    .gradient-card {
+      @apply rounded-3xl p-8;
+    }
   }
 
   .gradient-card::before {
@@ -288,14 +301,21 @@
 
   /* Skill chips - Vintage capsule style */
   .skill-chip {
-    @apply inline-flex items-center px-6 py-3 rounded-full;
+    @apply inline-flex items-center px-4 py-2 rounded-full;
     background: hsl(338, 49%, 92%);
     border: 1px solid hsl(332 58% 53% / 0.4);
     color: hsl(306, 23%, 26%);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     transition: var(--transition-smooth);
     font-family: 'Inter', sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    .skill-chip {
+      @apply px-6 py-3;
+      font-size: 0.95rem;
+    }
   }
 
   .skill-chip:hover {
@@ -308,14 +328,21 @@
 
   /* Interest badges */
   .interest-badge {
-    @apply inline-flex items-center px-5 py-2 rounded-full;
+    @apply inline-flex items-center px-4 py-2 rounded-full;
     background: hsl(338, 49%, 88%);
     border: 1px solid hsl(348 54% 47% / 0.4);
     color: hsl(306, 23%, 26%);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: var(--transition-smooth);
     font-family: 'Inter', sans-serif;
+  }
+
+  @media (min-width: 768px) {
+    .interest-badge {
+      @apply px-5 py-2;
+      font-size: 0.9rem;
+    }
   }
 
   .interest-badge:hover {
@@ -329,9 +356,15 @@
   .notable-card {
     background: linear-gradient(135deg, hsl(338, 49%, 85%) 0%, hsl(44, 100%, 90%) 100%);
     border: 2px solid hsl(332 58% 53% / 0.4);
-    @apply rounded-3xl p-6;
+    @apply rounded-2xl p-5;
     box-shadow: 0 12px 40px -10px hsl(332 58% 53% / 0.25);
     transition: var(--transition-smooth);
+  }
+
+  @media (min-width: 768px) {
+    .notable-card {
+      @apply rounded-3xl p-6;
+    }
   }
 
   .notable-card:hover {

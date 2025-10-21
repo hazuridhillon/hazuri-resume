@@ -43,10 +43,10 @@ export const Hero = () => {
   }, [scrollTimeout]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
-      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-12 md:py-20">
+      <div className="relative z-10 text-center px-4 md:px-6 max-w-6xl mx-auto">
         <h1 
-          className="text-7xl md:text-8xl lg:text-[9rem] font-black mb-10 tracking-tight leading-none"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[9rem] font-black mb-8 md:mb-10 tracking-tight leading-none"
           style={{ 
             fontWeight: 900,
             color: 'hsl(348, 54%, 47%)',
@@ -70,7 +70,7 @@ export const Hero = () => {
             ))}
           </span>
           <span 
-            className="inline-block animate-letter-tumble ml-4"
+            className="inline-block animate-letter-tumble ml-2 md:ml-4"
             style={{
               animationDelay: `${letterDelays[6]}ms`,
               transformOrigin: 'center center',
@@ -99,7 +99,7 @@ export const Hero = () => {
         </h1>
         
         <p 
-          className="text-xl md:text-2xl lg:text-3xl mb-16 font-medium tracking-wide animate-fade-up max-w-4xl mx-auto" 
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-12 md:mb-16 font-medium tracking-wide animate-fade-up max-w-4xl mx-auto px-2" 
           style={{ 
             animationDelay: '0.3s', 
             opacity: 0, 
