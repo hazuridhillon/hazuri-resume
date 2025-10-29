@@ -99,7 +99,7 @@ export const Hero = () => {
         </h1>
         
         <p 
-          className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-12 md:mb-16 font-medium tracking-wide animate-fade-up max-w-5xl mx-auto px-2 whitespace-nowrap"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-12 md:mb-16 font-semibold tracking-wide animate-fade-up max-w-5xl mx-auto px-2 whitespace-nowrap"
           style={{ 
             animationDelay: '0.3s', 
             opacity: 0, 
