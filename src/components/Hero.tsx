@@ -110,7 +110,7 @@ export const Hero = () => {
             fontFamily: 'Fraunces, Georgia, serif',
           }}
         >
-          Tech Entrepreneur × Fashion Innovator × AI Strategist
+          Blending strategy, style, and technology to shape the next generation of ideas.
         </p>
         
         <div 
