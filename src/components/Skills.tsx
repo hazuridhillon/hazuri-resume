@@ -46,7 +46,8 @@ const skills = [
 ];
 
 const interests = [
-  "Fashion & Beauty",
+  "Fashion",
+  "Beauty",
   "Yoga, Pilates, Wellness",
   "Pop-culture",
   "Consumer AI",
