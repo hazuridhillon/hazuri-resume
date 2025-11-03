@@ -249,8 +249,8 @@
   /* Gradient elevated card - Minimal luxury */
   .gradient-card {
     background: linear-gradient(135deg, 
-      hsl(44, 100%, 90%) 0%, 
-      hsl(28, 42%, 85%) 100%);
+      hsl(40, 35%, 92%) 0%, 
+      hsl(35, 30%, 88%) 100%);
     @apply rounded-2xl p-4;
     box-shadow: 
       0 8px 32px -10px hsl(306 23% 26% / 0.08),
