@@ -6,7 +6,7 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-24 md:py-32 lg:py-40 xl:py-48">
       <div className="relative z-10 text-center px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
         <h1 
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-10 md:mb-14 lg:mb-16 tracking-tight leading-none animate-fade-up"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-10 md:mb-14 lg:mb-16 tracking-tight leading-none animate-fade-up"
           style={{ 
             fontWeight: 700,
             color: 'hsl(348, 54%, 47%)',
