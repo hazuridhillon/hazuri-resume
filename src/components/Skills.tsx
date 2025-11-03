@@ -57,23 +57,23 @@ const interests = [
 export const Skills = () => {
   return (
     <TooltipProvider delayDuration={200}>
-      <section className="pt-12 md:pt-16 pb-12 md:pb-20 px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
-      <div className="flex items-center gap-2 md:gap-3 mb-8 md:mb-12">
+      <section className="pt-16 md:pt-20 lg:pt-24 pb-16 md:pb-24 lg:pb-28 px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
+      <div className="flex items-center gap-2 md:gap-3 mb-10 md:mb-14 lg:mb-16">
         <Award size={20} className="text-primary" />
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black section-header leading-tight">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black section-header leading-tight">
           SKILLS & INTERESTS
         </h2>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-12">
+      <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16">
         {/* Left Column: Skills + Certifications */}
-        <div className="space-y-10">
+        <div className="space-y-8 md:space-y-10">
           {/* Skills */}
           <div
             className="animate-fade-up"
             style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
           >
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 md:mb-8 section-header">
+            <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-6 md:mb-8 section-header">
               Skills
             </h3>
             <div className="flex flex-wrap gap-3">
@@ -110,7 +110,7 @@ export const Skills = () => {
             className="gradient-card animate-fade-up"
             style={{ animationDelay: '1.2s', opacity: 0, animationFillMode: 'forwards' }}
           >
-            <h4 className="text-lg md:text-xl lg:text-2xl font-bold mb-4 subheading-hover">
+            <h4 className="text-base md:text-lg lg:text-xl font-bold mb-4 subheading-hover">
               Certifications
             </h4>
             <ul className="space-y-3 font-sans">
@@ -127,13 +127,13 @@ export const Skills = () => {
         </div>
 
         {/* Right Column: Interests + Notable Achievement */}
-        <div className="space-y-10">
+        <div className="space-y-8 md:space-y-10">
           {/* Interests */}
           <div
             className="animate-fade-up"
             style={{ animationDelay: '0.6s', opacity: 0, animationFillMode: 'forwards' }}
           >
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 md:mb-8 section-header">
+            <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-6 md:mb-8 section-header">
               Interests
             </h3>
             <div className="flex flex-wrap gap-3">
@@ -158,7 +158,7 @@ export const Skills = () => {
             className="notable-card animate-fade-up"
             style={{ animationDelay: '1.3s', opacity: 0, animationFillMode: 'forwards' }}
           >
-            <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-foreground mb-3">
+            <h4 className="text-base md:text-lg lg:text-xl font-bold text-foreground mb-3">
               Notable Achievement
             </h4>
             <p className="text-base font-medium text-foreground font-sans leading-relaxed">
