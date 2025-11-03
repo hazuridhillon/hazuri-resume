@@ -23,7 +23,7 @@ const Shape = ({ type, className = "", size = 48, style }: ShapeProps) => {
     <div className={`absolute ${className}`} style={style}>
       <Icon
         size={size}
-        className="opacity-25 blur-[40px]"
+        className="opacity-10 blur-[80px]"
         strokeWidth={1.5}
         fill="url(#vintage-gradient)"
         stroke="url(#vintage-gradient)"
@@ -47,43 +47,13 @@ export const GeometricShapes = () => {
       </svg>
 
       <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
-        {/* Orchid Whisper shapes */}
-        <Shape type="heart" size={180} className="top-[12%] left-[8%] animate-drift-slow" />
-        <Shape type="star" size={120} className="top-[25%] right-[15%] animate-drift" />
-        <Shape type="flower" size={160} className="top-[55%] left-[12%] animate-drift-slower" />
-        <Shape type="sparkles" size={100} className="top-[70%] right-[20%] animate-drift-fast" />
-        
-        {/* Crimson Velvet accents */}
-        <Shape type="circle" size={200} className="top-[40%] right-[10%] animate-drift-slow" />
-        <Shape type="hexagon" size={140} className="top-[80%] left-[25%] animate-drift" />
-        
-        {/* Blush highlights */}
-        <Shape type="heart" size={110} className="top-[15%] right-[35%] animate-drift-slower" />
-        <Shape type="star" size={90} className="top-[45%] left-[40%] animate-drift-fast" />
-        <Shape type="flower" size={130} className="top-[65%] right-[45%] animate-drift" />
-        
-        {/* Mossy Stone organic shapes */}
-        <Shape type="circle" size={150} className="top-[8%] left-[50%] animate-drift-slow" 
-          style={{ 
-            filter: 'blur(40px)', 
-            opacity: 0.2,
-            fill: 'hsl(55, 24%, 35%)',
-            stroke: 'hsl(55, 24%, 35%)' 
-          }} 
-        />
-        <Shape type="hexagon" size={95} className="top-[88%] right-[12%] animate-drift-slower"
-          style={{ 
-            filter: 'blur(35px)', 
-            opacity: 0.22,
-            fill: 'hsl(55, 24%, 35%)',
-            stroke: 'hsl(55, 24%, 35%)' 
-          }} 
-        />
-        
-        {/* Additional organic elements */}
-        <Shape type="sparkles" size={75} className="top-[32%] left-[70%] animate-drift-fast" />
-        <Shape type="flower" size={115} className="top-[50%] right-[60%] animate-drift" />
-        <Shape type="heart" size={95} className="top-[75%] left-[65%] animate-drift-slow" />
+        {/* Minimal organic shapes - ultra subtle */}
+        <Shape type="circle" size={200} className="top-[20%] left-[10%] animate-drift-minimal" />
+        <Shape type="flower" size={180} className="top-[60%] right-[15%] animate-drift-minimal" />
+        <Shape type="circle" size={160} className="top-[40%] right-[40%] animate-drift-minimal" />
+        <Shape type="flower" size={150} className="top-[70%] left-[30%] animate-drift-minimal" />
+        <Shape type="circle" size={140} className="top-[15%] right-[25%] animate-drift-minimal" />
+        <Shape type="flower" size={120} className="top-[80%] right-[50%] animate-drift-minimal" />
       </div>
     </>
   );

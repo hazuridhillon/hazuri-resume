@@ -100,6 +100,10 @@ export default {
           "50%": { transform: "translate(-18px, 25px) rotate(-2deg)" },
           "75%": { transform: "translate(22px, 12px) rotate(3deg)" },
         },
+        "drift-minimal": {
+          "0%, 100%": { transform: "translate(0, 0) rotate(0deg)" },
+          "50%": { transform: "translate(12px, -12px) rotate(1deg)" },
+        },
         "fade-up": {
           from: { opacity: "0", transform: "translateY(30px)" },
           to: { opacity: "1", transform: "translateY(0)" },
@@ -135,6 +139,7 @@ export default {
         "drift-slow": "drift-slow 90s ease-in-out infinite",
         "drift-slower": "drift-slower 100s ease-in-out infinite",
         "drift-fast": "drift-fast 70s ease-in-out infinite",
+        "drift-minimal": "drift-minimal 120s ease-in-out infinite",
         "fade-up": "fade-up 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
         "pulse-glow": "pulse-glow 4s ease-in-out infinite",
         "letter-tumble": "letter-tumble 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",

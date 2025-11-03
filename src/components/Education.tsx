@@ -1,9 +1,9 @@
 import { GraduationCap, Sparkles } from "lucide-react";
 export const Education = () => {
-  return <section className="pt-12 md:pt-20 pb-8 px-4 md:px-6 max-w-6xl mx-auto">
-      <div className="flex items-center gap-2 md:gap-4 mb-12 md:mb-16 flex-wrap">
-        <GraduationCap size={28} className="text-primary md:w-10 md:h-10 flex-shrink-0" />
-        <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black section-header break-words">
+  return <section className="pt-20 md:pt-32 pb-12 md:pb-20 px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
+      <div className="flex items-center gap-2 md:gap-3 mb-8 md:mb-12 flex-wrap">
+        <GraduationCap size={20} className="text-primary flex-shrink-0" />
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black section-header break-words">
           EDUCATION
         </h2>
       </div>
@@ -20,14 +20,14 @@ export const Education = () => {
               href="https://www.babson.edu" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-3xl md:text-4xl font-bold subheading-hover mb-2 hover:text-primary transition-colors inline-block"
+              className="text-xl md:text-2xl font-bold subheading-hover mb-2 hover:text-primary transition-colors inline-block"
             >
               Babson College
             </a>
             <p className="text-base text-muted-foreground font-sans">
               Wellesley, MA
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground font-sans mt-1">
+            <p className="text-base md:text-lg text-muted-foreground font-sans mt-1 leading-relaxed">
               Bachelor of Science, Technology Entrepreneurship
             </p>
             <p className="text-base text-primary font-sans">
@@ -42,25 +42,25 @@ export const Education = () => {
             </p>
           </div>
 
-          <ul className="space-y-2 text-muted-foreground font-sans">
+          <ul className="space-y-2 text-muted-foreground font-sans leading-relaxed">
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>CWEL Scholar</span>
             </li>
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Dean's List</span>
             </li>
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Student Government Senator</span>
             </li>
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Kappa Kappa Gamma VP of Events</span>
             </li>
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Fashion and Sneaker Organization VP of Finance</span>
             </li>
           </ul>
@@ -81,14 +81,14 @@ export const Education = () => {
               href="https://ohs.stanford.edu" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-3xl md:text-4xl font-bold subheading-hover mb-2 hover:text-primary transition-colors inline-block"
+              className="text-xl md:text-2xl font-bold subheading-hover mb-2 hover:text-primary transition-colors inline-block"
             >
               Stanford Online High School
             </a>
             <p className="text-base text-muted-foreground font-sans">
               Palo Alto, CA
             </p>
-            <p className="text-lg md:text-xl text-muted-foreground font-sans mt-1">
+            <p className="text-base md:text-lg text-muted-foreground font-sans mt-1 leading-relaxed">
               High School Diploma
             </p>
             <p className="text-base text-primary font-sans">
@@ -96,17 +96,17 @@ export const Education = () => {
             </p>
           </div>
 
-          <ul className="space-y-2 text-muted-foreground font-sans">
+          <ul className="space-y-2 text-muted-foreground font-sans leading-relaxed">
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Community Engagement Club – Executive Director</span>
             </li>
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Fashion and Streetwear Club – President</span>
             </li>
             <li className="flex items-start gap-2">
-              <Sparkles size={16} className="text-primary flex-shrink-0 mt-0.5" />
+              <Sparkles size={14} className="text-primary flex-shrink-0 mt-0.5" />
               <span>Post-COVID Online Education Ambassador</span>
             </li>
           </ul>
