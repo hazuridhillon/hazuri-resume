@@ -1,3 +1,4 @@
+import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { Education } from "@/components/Education";
 import { Experience } from "@/components/Experience";
@@ -8,6 +9,7 @@ const Index = () => {
   return (
     <div className="relative">
       <GeometricShapes />
+      <Navigation />
       <Hero />
       <Education />
       <Experience />
