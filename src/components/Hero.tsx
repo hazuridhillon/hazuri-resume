@@ -4,9 +4,9 @@ export const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-24 md:py-32 lg:py-40 xl:py-48">
-      <div className="relative z-10 text-center px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-6 md:px-12 lg:px-16 max-w-7xl mx-auto">
         <h1 
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black mb-10 md:mb-14 lg:mb-16 tracking-tight leading-none animate-fade-up"
+          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[12rem] font-black mb-8 md:mb-10 lg:mb-12 tracking-tight leading-none animate-fade-up"
           style={{ 
             fontWeight: 700,
             color: 'hsl(348, 54%, 47%)',
@@ -16,11 +16,11 @@ export const Hero = () => {
             animationFillMode: 'forwards',
           }}
         >
-          HAZURI K.<br />DHILLON
+          HAZURI K. DHILLON
         </h1>
         
         <p 
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-16 md:mb-20 lg:mb-24 font-semibold tracking-normal animate-fade-up max-w-4xl mx-auto px-2"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-12 md:mb-16 lg:mb-20 font-semibold tracking-normal animate-fade-up mx-auto whitespace-nowrap"
           style={{ 
             animationDelay: '0.3s', 
             opacity: 0, 
