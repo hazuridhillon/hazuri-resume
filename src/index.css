@@ -11,12 +11,12 @@
     --crimson-velvet: 348 54% 47%;     /* #BF3556 */
     --mossy-stone: 55 24% 35%;         /* #6C6A43 */
     --mulberry-shadow: 306 23% 26%;    /* #4D3449 */
-    --pearl-tint: 44 100% 90%;         /* #FFF0D2 */
-    --cream: 28 42% 70%;               /* #E2C5AE */
+    --pearl-tint: 42 10% 95%;          /* Eggshell white */
+    --cream: 40 12% 88%;               /* Eggshell cream */
     --blush: 338 49% 78%;              /* #E5ACBF */
 
     /* Base Colors */
-    --background: 44 100% 90%;         /* Pearl Tint */
+    --background: 42 10% 95%;          /* Eggshell */
     --foreground: 306 23% 26%;         /* Mulberry Shadow for text */
     
     /* Primary brand colors */
@@ -27,11 +27,11 @@
     --secondary-foreground: 0 0% 100%;
 
     /* Card backgrounds */
-    --card: 44 100% 90%;               /* Pearl Tint */
+    --card: 42 10% 95%;                /* Eggshell */
     --card-foreground: 306 23% 26%;    /* Mulberry Shadow */
 
     /* Muted elements */
-    --muted: 28 42% 70%;               /* Cream */
+    --muted: 40 12% 88%;               /* Eggshell cream */
     --muted-foreground: 55 24% 35%;    /* Mossy Stone */
 
     /* Accent colors */
@@ -48,24 +48,24 @@
     --destructive-foreground: 0 0% 100%;
 
     /* Popover */
-    --popover: 44 100% 90%;
+    --popover: 42 10% 95%;
     --popover-foreground: 306 23% 26%;
 
     /* Sidebar (if needed) */
-    --sidebar-background: 44 100% 90%;
+    --sidebar-background: 42 10% 95%;
     --sidebar-foreground: 306 23% 26%;
     --sidebar-primary: 332 58% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 28 42% 70%;
+    --sidebar-accent: 40 12% 88%;
     --sidebar-accent-foreground: 306 23% 26%;
     --sidebar-border: 55 24% 35%;
     --sidebar-ring: 332 58% 53%;
 
     /* Gradients - Vintage Editorial */
-    --gradient-hero: linear-gradient(180deg, hsl(44, 100%, 90%) 0%, hsl(332, 58%, 83%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(42, 10%, 95%) 0%, hsl(332, 58%, 83%) 100%);
     --gradient-button: linear-gradient(120deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
     --gradient-text: linear-gradient(135deg, hsl(332, 58%, 53%), hsl(348, 54%, 47%));
-    --gradient-card: linear-gradient(135deg, hsl(44, 100%, 90%) 0%, hsl(28, 42%, 85%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(42, 10%, 95%) 0%, hsl(40, 12%, 92%) 100%);
     
     /* Shadows - Warm vintage shadows */
     --shadow-card: 0 8px 32px -8px hsl(306 23% 26% / 0.1);
@@ -114,17 +114,17 @@
     z-index: -2;
     background: 
       radial-gradient(circle at 20% 30%, hsl(332, 58%, 88%) 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, hsl(28, 42%, 85%) 0%, transparent 35%),
+      radial-gradient(circle at 80% 20%, hsl(40, 12%, 92%) 0%, transparent 35%),
       radial-gradient(circle at 40% 80%, hsl(338, 49%, 85%) 0%, transparent 38%),
-      radial-gradient(circle at 90% 70%, hsl(44, 100%, 92%) 0%, transparent 32%),
+      radial-gradient(circle at 90% 70%, hsl(42, 8%, 96%) 0%, transparent 32%),
       radial-gradient(circle at 50% 50%, hsl(332, 40%, 90%) 0%, transparent 50%),
       linear-gradient(180deg, 
-        hsl(44, 100%, 90%) 0%, 
-        hsl(28, 42%, 88%) 20%,
+        hsl(42, 10%, 95%) 0%, 
+        hsl(40, 10%, 94%) 20%,
         hsl(338, 49%, 90%) 40%,
-        hsl(44, 100%, 92%) 60%,
+        hsl(42, 8%, 96%) 60%,
         hsl(332, 48%, 88%) 80%,
-        hsl(44, 100%, 90%) 100%);
+        hsl(42, 10%, 95%) 100%);
     background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 200%;
     animation: gradient-flow 60s ease-in-out infinite;
   }
@@ -253,9 +253,9 @@
 
   /* Gradient elevated card - Minimal luxury */
   .gradient-card {
-    background: linear-gradient(135deg, 
-      hsl(38, 55%, 91%) 0%, 
-      hsl(32, 48%, 87%) 100%);
+  background: linear-gradient(135deg, 
+    hsl(42, 10%, 95%) 0%, 
+    hsl(40, 12%, 92%) 100%);
     @apply rounded-2xl p-4;
     box-shadow: 
       0 8px 32px -10px hsl(306 23% 26% / 0.08),
@@ -296,7 +296,7 @@
   /* Skill chips - Refined minimal style */
   .skill-chip {
     @apply inline-flex items-center px-3 py-1.5 rounded-full;
-    background: hsl(338, 49%, 92%);
+    background: hsl(42, 12%, 94%);
     border: 1px solid hsl(332 58% 53% / 0.3);
     color: hsl(306, 23%, 26%);
     font-weight: 500;
@@ -323,7 +323,7 @@
   /* Interest badges - Refined minimal style */
   .interest-badge {
     @apply inline-flex items-center px-3 py-1.5 rounded-full;
-    background: hsl(338, 49%, 88%);
+    background: hsl(40, 12%, 91%);
     border: 1px solid hsl(348 54% 47% / 0.3);
     color: hsl(306, 23%, 26%);
     font-weight: 500;
@@ -348,7 +348,7 @@
 
   /* Notable achievement card - Refined minimal style */
   .notable-card {
-    background: linear-gradient(135deg, hsl(338, 49%, 85%) 0%, hsl(44, 100%, 90%) 100%);
+    background: linear-gradient(135deg, hsl(338, 49%, 85%) 0%, hsl(42, 10%, 95%) 100%);
     border: 1px solid hsl(332 58% 53% / 0.3);
     @apply rounded-2xl p-4;
     box-shadow: 0 8px 32px -10px hsl(332 58% 53% / 0.18);
@@ -377,9 +377,9 @@
   /* Navigation Bar Styles */
   .navbar {
     @apply fixed top-0 left-0 right-0 z-50;
-    background: linear-gradient(135deg, 
-      hsl(38, 55%, 91%) 0%, 
-      hsl(32, 48%, 87%) 100%);
+  background: linear-gradient(135deg, 
+    hsl(42, 10%, 95%) 0%, 
+    hsl(40, 12%, 92%) 100%);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid hsl(var(--border) / 0.3);
