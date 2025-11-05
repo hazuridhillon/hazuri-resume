@@ -84,7 +84,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 6rem;
   }
 
   * {
@@ -422,5 +422,25 @@
       0 0 100px 12px hsl(332 58% 53% / 0.38),
       0 0 60px 8px hsl(338 49% 78% / 0.42),
       0 0 30px 4px hsl(332 58% 53% / 0.32);
+  }
+
+  /* Scroll highlight animation for sections */
+  @keyframes highlight-section {
+    0% {
+      transform: scale(0.98);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.01);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Smooth scroll snap for better UX */
+  .scroll-section {
+    scroll-margin-top: 6rem;
   }
 }

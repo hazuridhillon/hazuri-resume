@@ -37,8 +37,22 @@ export const Navigation = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const navbarHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+      
       setIsOpen(false);
+      
+      // Add subtle animation to target section
+      element.style.animation = 'none';
+      setTimeout(() => {
+        element.style.animation = 'highlight-section 0.6s ease-out';
+      }, 10);
     }
   };
 
