@@ -280,23 +280,8 @@
     width: 60%;
     height: 60%;
     border-radius: 1.5rem;
-    background: radial-gradient(circle at top left, 
-      hsl(338 49% 78% / 0.2),
-      hsl(332 58% 53% / 0.15),
-      transparent 60%);
+    background: radial-gradient(circle at top left, hsl(338 49% 78% / 0.2), transparent 60%);
     pointer-events: none;
-    transition: var(--transition-smooth);
-    opacity: 1;
-  }
-
-  .gradient-card:hover::before {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at top left, 
-      hsl(338 49% 78% / 0.45),
-      hsl(332 58% 53% / 0.3),
-      transparent 70%);
   }
 
   .gradient-card:hover {
@@ -368,37 +353,12 @@
     @apply rounded-2xl p-4;
     box-shadow: 0 8px 32px -10px hsl(332 58% 53% / 0.18);
     transition: var(--transition-smooth);
-    position: relative;
-    overflow: hidden;
   }
 
   @media (min-width: 768px) {
     .notable-card {
       @apply rounded-3xl p-5;
     }
-  }
-
-  .notable-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    background: radial-gradient(circle at center, 
-      hsl(332 58% 53% / 0.25), 
-      hsl(338 49% 78% / 0.15), 
-      transparent 70%);
-    opacity: 0;
-    transition: var(--transition-smooth);
-    pointer-events: none;
-  }
-
-  .notable-card:hover::before {
-    opacity: 1;
-  }
-
-  .notable-card > * {
-    position: relative;
-    z-index: 1;
   }
 
   .notable-card:hover {
@@ -449,38 +409,5 @@
     height: 2px;
     background: hsl(332, 58%, 53%);
     border-radius: 2px;
-  }
-
-  /* Experience card with pink gradient hover */
-  .experience-card {
-    position: relative;
-    overflow: hidden;
-    transition: var(--transition-smooth);
-  }
-
-  .experience-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at top right, 
-      hsl(332 58% 53% / 0.2), 
-      hsl(338 49% 78% / 0.15), 
-      transparent 60%);
-    opacity: 0;
-    transition: var(--transition-smooth);
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  .experience-card:hover::before {
-    opacity: 1;
-  }
-
-  .experience-card > * {
-    position: relative;
-    z-index: 1;
   }
 }

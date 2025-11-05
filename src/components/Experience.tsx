@@ -13,7 +13,7 @@ export const Experience = () => {
       <div className="space-y-8">
         {/* Dhillon Law Group */}
         <div 
-          className="experience-card rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
+          className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
@@ -49,7 +49,7 @@ export const Experience = () => {
 
         {/* Phia */}
         <div 
-          className="experience-card rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
+          className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
@@ -89,7 +89,7 @@ export const Experience = () => {
 
         {/* Nvidia */}
         <div 
-          className="experience-card rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
+          className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
@@ -133,7 +133,7 @@ export const Experience = () => {
 
         {/* Marble Lotus */}
         <div 
-          className="experience-card rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
+          className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
@@ -165,7 +165,7 @@ export const Experience = () => {
 
         {/* BeMe Health - Two roles */}
         <div 
-          className="experience-card rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
+          className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}
         >
           <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
