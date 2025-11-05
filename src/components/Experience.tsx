@@ -16,7 +16,7 @@ export const Experience = () => {
           className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
         >
-          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,94%)] p-4 pb-3">
+          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
             <h3 className="text-xl md:text-2xl font-bold mb-2">
               Business Management and AI Intern
             </h3>
@@ -52,7 +52,7 @@ export const Experience = () => {
           className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
         >
-          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,94%)] p-4 pb-3">
+          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
             <h3 className="text-xl md:text-2xl font-bold mb-2">
               Operations Assistant Intern
             </h3>
@@ -92,7 +92,7 @@ export const Experience = () => {
           className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}
         >
-          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,94%)] p-4 pb-3">
+          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
             <h3 className="text-xl md:text-2xl font-bold mb-2">
               Project Management Intern – Supply Chain
             </h3>
@@ -136,7 +136,7 @@ export const Experience = () => {
           className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}
         >
-          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,94%)] p-4 pb-3">
+          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
             <h3 className="text-xl md:text-2xl font-bold mb-2">
               E-commerce and Product Development Intern
             </h3>
@@ -168,7 +168,7 @@ export const Experience = () => {
           className="rounded-2xl p-0 overflow-hidden shadow-[0_8px_32px_-10px_hsl(306_23%_26%/0.08),0_16px_64px_-20px_hsl(306_23%_26%/0.06)] animate-fade-up"
           style={{ animationDelay: '0.5s', opacity: 0, animationFillMode: 'forwards' }}
         >
-          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,94%)] p-4 pb-3">
+          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3">
             <h3 className="text-xl md:text-2xl font-bold mb-2">
               BeingMe Podcast Host
             </h3>
@@ -194,7 +194,7 @@ export const Experience = () => {
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,94%)] p-4 pb-3 border-t border-border/30">
+          <div className="bg-gradient-to-br from-[hsl(42,10%,95%)] to-[hsl(42,10%,91%)] p-4 pb-3 border-t border-border/30">
             <h3 className="text-xl md:text-2xl font-bold mb-2">
               Project Intern and Teen Advisory Board
             </h3>
