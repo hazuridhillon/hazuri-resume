@@ -11,6 +11,7 @@ export const Navigation = () => {
     { id: "education", label: "Education" },
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
+    { id: "contact", label: "Contact" },
   ];
 
   useEffect(() => {
