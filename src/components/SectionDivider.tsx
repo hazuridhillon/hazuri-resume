@@ -58,12 +58,6 @@ export const SectionDivider = () => {
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      {/* Animated gradient line */}
-      <div className="relative h-px max-w-3xl mx-auto overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[hsl(332,58%,53%)] to-transparent opacity-30 animate-pulse-subtle" />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[hsl(338,49%,78%)] to-transparent animate-shimmer" />
-      </div>
-
       {/* Dense floating decorative shapes */}
       <div className="absolute inset-0 flex items-center justify-center max-w-3xl mx-auto">
         {shapes.map((shape, index) => {
