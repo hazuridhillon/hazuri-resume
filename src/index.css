@@ -113,17 +113,17 @@
     height: 100%;
     z-index: -2;
     background: 
-      radial-gradient(circle at 20% 30%, hsl(42, 8%, 94%) 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, hsl(40, 6%, 96%) 0%, transparent 35%),
-      radial-gradient(circle at 40% 80%, hsl(42, 6%, 93%) 0%, transparent 38%),
+      radial-gradient(circle at 20% 30%, hsl(332, 58%, 88%) 0%, transparent 40%),
+      radial-gradient(circle at 80% 20%, hsl(40, 6%, 94%) 0%, transparent 35%),
+      radial-gradient(circle at 40% 80%, hsl(338, 49%, 85%) 0%, transparent 38%),
       radial-gradient(circle at 90% 70%, hsl(42, 5%, 97%) 0%, transparent 32%),
-      radial-gradient(circle at 50% 50%, hsl(40, 7%, 95%) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, hsl(332, 40%, 90%) 0%, transparent 50%),
       linear-gradient(180deg, 
         hsl(42, 5%, 96%) 0%, 
         hsl(40, 6%, 94%) 20%,
-        hsl(42, 6%, 95%) 40%,
+        hsl(338, 49%, 90%) 40%,
         hsl(42, 5%, 97%) 60%,
-        hsl(40, 6%, 94%) 80%,
+        hsl(332, 48%, 88%) 80%,
         hsl(42, 5%, 96%) 100%);
     background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 200%;
     animation: gradient-flow 60s ease-in-out infinite;
@@ -280,7 +280,7 @@
     width: 60%;
     height: 60%;
     border-radius: 1.5rem;
-    background: radial-gradient(circle at top left, hsl(42 6% 94% / 0.15), transparent 60%);
+    background: radial-gradient(circle at top left, hsl(338 49% 78% / 0.2), transparent 60%);
     pointer-events: none;
   }
 
@@ -348,7 +348,7 @@
 
   /* Notable achievement card - Refined minimal style */
 .notable-card {
-  background: linear-gradient(135deg, hsl(42, 8%, 93%) 0%, hsl(42, 5%, 96%) 100%);
+  background: linear-gradient(135deg, hsl(338, 49%, 85%) 0%, hsl(42, 5%, 96%) 100%);
     border: 1px solid hsl(332 58% 53% / 0.3);
     @apply rounded-2xl p-4;
     box-shadow: 0 8px 32px -10px hsl(332 58% 53% / 0.18);
