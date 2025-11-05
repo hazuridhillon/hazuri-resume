@@ -3,7 +3,7 @@ import { Mail, Linkedin, MapPin } from "lucide-react";
 export const Hero = () => {
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden py-24 md:py-32 lg:py-40 xl:py-48">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-40 pb-24 md:pt-48 md:pb-32 lg:pt-56 lg:pb-40 xl:pt-64 xl:pb-48">
       <div className="relative z-10 text-center px-6 md:px-12 lg:px-16 max-w-7xl mx-auto">
         <h1 
           className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[12rem] font-black mb-8 md:mb-10 lg:mb-12 tracking-tight leading-none animate-fade-up"
