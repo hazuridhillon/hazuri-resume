@@ -60,7 +60,7 @@ export const Skills = () => {
       <section id="skills" className="pt-16 md:pt-20 lg:pt-24 pb-16 md:pb-24 lg:pb-28 px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
       <div className="flex items-center gap-2 md:gap-3 mb-10 md:mb-14 lg:mb-16">
         <Award size={20} className="text-primary" />
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black section-header leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black section-header leading-tight">
           SKILLS & INTERESTS
         </h2>
       </div>

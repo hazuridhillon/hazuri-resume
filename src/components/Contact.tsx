@@ -56,7 +56,7 @@ export const Contact = () => {
         <div className="text-center mb-12 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 mb-4">
             <Mail className="h-8 w-8 md:h-10 md:w-10 text-primary" />
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Get In Touch
             </h2>
           </div>
