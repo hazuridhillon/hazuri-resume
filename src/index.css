@@ -272,25 +272,16 @@
     }
   }
 
-  .gradient-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60%;
-    height: 60%;
-    border-radius: 1.5rem;
-    background: radial-gradient(circle at top left, hsl(338 49% 78% / 0.2), transparent 60%);
-    pointer-events: none;
-  }
-
   .gradient-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-12px) scale(1.02);
     box-shadow: 
-      0 12px 40px -12px hsl(306 23% 26% / 0.12),
-      0 0 24px hsl(332 58% 53% / 0.15),
-      inset 0 1px 3px hsl(0 0% 100% / 0.4);
-    border-color: hsl(332 58% 53% / 0.3);
+      0 30px 60px -12px hsl(306 23% 26% / 0.25),
+      0 0 100px 12px hsl(332 58% 53% / 0.4),
+      0 0 60px 8px hsl(338 49% 78% / 0.45),
+      0 0 30px 4px hsl(332 58% 53% / 0.35),
+      inset 0 1px 3px hsl(0 0% 100% / 0.5);
+    border-color: hsl(332 58% 53% / 0.5);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Skill chips - Refined minimal style */
@@ -362,9 +353,13 @@
   }
 
   .notable-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px -12px hsl(332 58% 53% / 0.25);
-    border-color: hsl(332 58% 53% / 0.4);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+      0 28px 56px -14px hsl(332 58% 53% / 0.32),
+      0 0 90px 10px hsl(332 58% 53% / 0.42),
+      0 0 50px 6px hsl(338 49% 78% / 0.45);
+    border-color: hsl(332 58% 53% / 0.55);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Decorative divider */
@@ -409,5 +404,23 @@
     height: 2px;
     background: hsl(332, 58%, 53%);
     border-radius: 2px;
+  }
+
+  /* Experience card with dramatic pink backlight */
+  .experience-card {
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 
+      0 4px 16px -4px hsl(306 23% 26% / 0.1),
+      0 0 0 0 hsl(332 58% 53% / 0);
+  }
+
+  .experience-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 
+      0 30px 60px -12px hsl(306 23% 26% / 0.28),
+      0 0 100px 12px hsl(332 58% 53% / 0.38),
+      0 0 60px 8px hsl(338 49% 78% / 0.42),
+      0 0 30px 4px hsl(332 58% 53% / 0.32);
   }
 }
