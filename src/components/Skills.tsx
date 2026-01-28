@@ -1,10 +1,9 @@
 import { Award } from "lucide-react";
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const skills = [
   {
@@ -56,8 +55,7 @@ const interests = [
 
 export const Skills = () => {
   return (
-    <TooltipProvider delayDuration={200}>
-      <section id="skills" className="pt-16 md:pt-20 lg:pt-24 pb-16 md:pb-24 lg:pb-28 px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
+    <section id="skills" className="pt-16 md:pt-20 lg:pt-24 pb-16 md:pb-24 lg:pb-28 px-6 md:px-12 lg:px-16 max-w-5xl mx-auto">
       <div className="flex items-center gap-2 md:gap-3 mb-10 md:mb-14 lg:mb-16">
         <Award size={20} className="text-primary" />
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black section-header leading-tight">
@@ -74,14 +72,14 @@ export const Skills = () => {
             style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
           >
             <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-6 md:mb-8 section-header">
-              Skills
+              Skills <span className="text-xs font-normal text-muted-foreground">(tap to learn more)</span>
             </h3>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, index) => (
-                <Tooltip key={skill.name}>
-                  <TooltipTrigger asChild>
-                    <span 
-                      className="skill-chip animate-fade-up cursor-help"
+                <Popover key={skill.name}>
+                  <PopoverTrigger asChild>
+                    <button 
+                      className="skill-chip animate-fade-up cursor-pointer"
                       style={{ 
                         animationDelay: `${0.2 + index * 0.05}s`, 
                         opacity: 0, 
@@ -89,9 +87,9 @@ export const Skills = () => {
                       }}
                     >
                       {skill.name}
-                    </span>
-                  </TooltipTrigger>
-                  <TooltipContent 
+                    </button>
+                  </PopoverTrigger>
+                  <PopoverContent 
                     side="top" 
                     className="max-w-xs md:max-w-sm bg-background/95 backdrop-blur-sm border-primary/20 text-foreground p-4 shadow-lg"
                     sideOffset={8}
@@ -99,8 +97,8 @@ export const Skills = () => {
                     <p className="text-sm leading-relaxed font-sans">
                       {skill.description}
                     </p>
-                  </TooltipContent>
-                </Tooltip>
+                  </PopoverContent>
+                </Popover>
               ))}
             </div>
           </div>
@@ -177,6 +175,5 @@ export const Skills = () => {
         </div>
       </div>
     </section>
-    </TooltipProvider>
   );
 };
