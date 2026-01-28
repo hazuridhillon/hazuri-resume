@@ -71,9 +71,14 @@ export const Skills = () => {
             className="animate-fade-up"
             style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}
           >
-            <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-6 md:mb-8 section-header">
-              Skills <span className="text-xs font-normal text-muted-foreground">(tap to learn more)</span>
-            </h3>
+            <div className="mb-6 md:mb-8">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-bold section-header">
+                Skills
+              </h3>
+              <span className="text-xs font-normal text-muted-foreground mt-1 block">
+                (tap to learn more)
+              </span>
+            </div>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, index) => (
                 <Popover key={skill.name}>
