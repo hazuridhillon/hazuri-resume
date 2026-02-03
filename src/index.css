@@ -118,7 +118,7 @@
     width: 100%;
     height: 100%;
     z-index: -2;
-    opacity: 0.78; /* Allow ~22% of rug background to show through */
+    opacity: 0.65; /* Allow ~35% of mosaic background to show through */
     background: 
       radial-gradient(circle at 20% 30%, hsl(332, 58%, 88%) 0%, transparent 40%),
       radial-gradient(circle at 80% 20%, hsl(40, 6%, 94%) 0%, transparent 35%),
