@@ -109,7 +109,7 @@
     background-attachment: fixed;
   }
 
-  /* Animated flowing gradient background - Vintage warm tones */
+  /* Uniform pink overlay - Vintage warm tones */
   body::after {
     content: '';
     position: fixed;
@@ -118,27 +118,15 @@
     width: 100%;
     height: 100%;
     z-index: -2;
-    opacity: 0.65; /* Allow ~35% of mosaic background to show through */
+    opacity: 0.80; /* Increased from 0.65 for stronger pink */
     background: 
-      radial-gradient(circle at 20% 30%, hsl(332, 58%, 88%) 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, hsl(40, 6%, 94%) 0%, transparent 35%),
-      radial-gradient(circle at 40% 80%, hsl(338, 49%, 85%) 0%, transparent 38%),
-      radial-gradient(circle at 90% 70%, hsl(42, 5%, 97%) 0%, transparent 32%),
-      radial-gradient(circle at 50% 50%, hsl(332, 40%, 90%) 0%, transparent 50%),
       linear-gradient(180deg, 
-        hsl(42, 5%, 96%) 0%, 
-        hsl(40, 6%, 94%) 20%,
-        hsl(338, 49%, 90%) 40%,
-        hsl(42, 5%, 97%) 60%,
-        hsl(332, 48%, 88%) 80%,
-        hsl(42, 5%, 96%) 100%);
-    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 200%;
-    animation: gradient-flow 60s ease-in-out infinite;
-  }
-
-  @keyframes gradient-flow {
-    0%, 100% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%; }
-    50% { background-position: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 100%; }
+        hsl(338, 49%, 88%) 0%,
+        hsl(332, 50%, 86%) 25%,
+        hsl(338, 48%, 87%) 50%,
+        hsl(332, 50%, 85%) 75%,
+        hsl(338, 49%, 88%) 100%);
+    background-size: 100% 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
