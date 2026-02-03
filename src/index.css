@@ -118,7 +118,7 @@
     width: 100%;
     height: 100%;
     z-index: -2;
-    opacity: 0.80; /* Increased from 0.65 for stronger pink */
+    opacity: 0.75; /* Balanced to show mosaic while keeping pink tint */
     background: 
       linear-gradient(180deg, 
         hsl(338, 49%, 88%) 0%,
