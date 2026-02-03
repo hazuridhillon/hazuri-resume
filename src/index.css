@@ -109,6 +109,14 @@
     background-attachment: fixed;
   }
 
+  /* Fix for mobile - background-attachment: fixed causes zoom issues */
+  @media (max-width: 768px) {
+    body {
+      background-attachment: scroll;
+      background-size: cover;
+    }
+  }
+
   /* Uniform pink overlay - Vintage warm tones */
   body::after {
     content: '';
