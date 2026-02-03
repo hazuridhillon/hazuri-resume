@@ -101,6 +101,12 @@
     min-height: 100vh;
     font-size: 16px;
     line-height: 1.7;
+    /* Vintage rug background - ultra subtle */
+    background-image: url('/images/vintage-rug-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   /* Animated flowing gradient background - Vintage warm tones */
