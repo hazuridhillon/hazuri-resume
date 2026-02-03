@@ -1,52 +1,35 @@
 
 
-## Plan: Increase and Even Out the Pink Overlay
+## Plan: Repeat Background Image on Mobile
 
-### Current State
-The page has a `body::after` pseudo-element that creates an overlay with multiple radial gradients and a linear gradient. The current setup:
-- Opacity is at `0.65`
-- Uses multiple radial gradients positioned at different spots (creating an uneven, organic look)
-- The radial gradients fade to `transparent`, creating patches of pink rather than even coverage
+### Problem
+On mobile devices, the background image appears too zoomed in even after changing `background-attachment` to `scroll`. The current `background-size: cover` fills the entire screen with a single instance of the image, making it appear zoomed.
 
-### What I'll Change
+### Solution
+Modify the mobile media query to repeat the background image 2-3 times vertically, showing more of the pattern at a smaller size.
 
-**1. Increase overlay opacity** (line 121)
-- Change from `0.65` to `0.80` for stronger pink coverage
+### Technical Changes
 
-**2. Make the pink more even** (lines 122-134)
-- Replace the scattered radial gradients with a simpler, more uniform pink overlay
-- Use a solid pink base layer combined with a subtle linear gradient for visual interest
-- This removes the "patchy" look from the various positioned radial gradients
+**File: `src/index.css` (lines 113-118)**
 
-### Updated CSS
+Update the mobile media query to:
+- Change `background-size` from `cover` to a specific size (e.g., `auto 50%` or `100% auto`) that shows the image at a smaller scale
+- Change `background-repeat` to `repeat` so the pattern tiles nicely
+- Keep `background-attachment: scroll` for proper mobile behavior
 
 ```css
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  opacity: 0.80; /* Increased from 0.65 for stronger pink */
-  background: 
-    linear-gradient(180deg, 
-      hsl(338, 49%, 88%) 0%,
-      hsl(332, 50%, 86%) 25%,
-      hsl(338, 48%, 87%) 50%,
-      hsl(332, 50%, 85%) 75%,
-      hsl(338, 49%, 88%) 100%);
-  background-size: 100% 100%;
-  animation: none; /* Remove animation since it's now uniform */
+/* Fix for mobile - background-attachment: fixed causes zoom issues */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+  }
 }
 ```
 
-### Files to Edit
-- `src/index.css` (lines 113-137) - Update the `body::after` overlay styles
-
-### Result
-- Stronger, more consistent pink overlay across the entire page
-- The mosaic pattern will still be subtly visible through the overlay
-- No more patchy or uneven areas
+This will:
+- Display the image at full width but natural height
+- Repeat the image vertically down the page
+- Show more of the mosaic pattern detail on mobile screens
 
