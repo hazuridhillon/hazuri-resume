@@ -1,24 +1,27 @@
 
 
-## Plan: Replace Background with Mosaic Pattern (Immediately Visible)
+## Plan: Replace Rug Background with Mosaic Pattern (Force Update)
 
-### What I'll Do
+### The Problem
+The old rug background is still showing. The previous copy operation may not have properly overwritten the file, or the browser is serving a cached version.
 
-Replace the current background image with this beautiful cream/gold mosaic star pattern and ensure it's clearly visible right away.
+### Solution
+I'll take a more forceful approach to ensure the new mosaic image is definitely used:
 
 ### Implementation Steps
 
-**Step 1: Copy the new image**
-- Copy `user-uploads://1d547c6321dbff21645f1e8227cc10de.jpg` to `public/images/vintage-rug-bg.jpg` (overwriting the existing file)
+**Step 1: Re-copy the mosaic image**
+- Copy `user-uploads://1d547c6321dbff21645f1e8227cc10de.jpg` to `public/images/vintage-rug-bg.jpg` again, overwriting completely
 
-**Step 2: Reduce overlay opacity for immediate visibility**
-- Change `body::after` opacity from `0.78` to `0.65` so the mosaic pattern is clearly visible (~35% showing through)
-- This mosaic pattern has more neutral tones (cream/gold) which will blend better with the pink gradients
+**Step 2: Update CSS references**  
+- Change the comment from "Vintage rug background" to "Mosaic pattern background" so it's clear what the image should be
+- This change will trigger a rebuild and help bust any caching
 
 ### Files Changed
-1. `public/images/vintage-rug-bg.jpg` - Overwritten with new mosaic image
-2. `src/index.css` - Reduce overlay opacity from `0.78` to `0.65`
+1. `public/images/vintage-rug-bg.jpg` - Overwritten with mosaic image (again, to ensure it takes effect)
+2. `src/index.css` - Update comment on line 104 from "Vintage rug background" to "Mosaic pattern background"
 
-### Result
-The mosaic star pattern will be immediately visible as a subtle texture across the entire page, complementing the vintage editorial aesthetic with its cream and gold tones.
+### After Implementation
+- Hard refresh the preview (Ctrl+Shift+R / Cmd+Shift+R) to ensure you see the new mosaic
+- The cream/gold star pattern should be visible behind the pink gradient overlay
 
