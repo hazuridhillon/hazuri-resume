@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const navItems = [
     { id: "home", label: "Home" },
@@ -13,6 +16,8 @@ export const Navigation = () => {
     { id: "skills", label: "Skills" },
     { id: "contact", label: "Contact" },
   ];
+
+  const isPortfolioPage = location.pathname === "/portfolio";
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,25 +40,25 @@ export const Navigation = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const navbarHeight = 80;
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - navbarHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-      
-      setIsOpen(false);
-      
-      // Add subtle animation to target section
-      element.style.animation = 'none';
+    if (isPortfolioPage) {
+      navigate("/");
       setTimeout(() => {
-        element.style.animation = 'highlight-section 0.6s ease-out';
-      }, 10);
+        const element = document.getElementById(id);
+        if (element) {
+          const navbarHeight = 80;
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: elementPosition - navbarHeight, behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        const navbarHeight = 80;
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({ top: elementPosition - navbarHeight, behavior: "smooth" });
+      }
     }
+    setIsOpen(false);
   };
 
   return (
@@ -75,12 +80,18 @@ export const Navigation = () => {
                 key={id}
                 onClick={() => scrollToSection(id)}
                 className={`nav-link ${
-                  activeSection === id ? "nav-link-active" : ""
+                  !isPortfolioPage && activeSection === id ? "nav-link-active" : ""
                 }`}
               >
                 {label}
               </button>
             ))}
+            <button
+              onClick={() => navigate("/portfolio")}
+              className={`nav-link ${isPortfolioPage ? "nav-link-active" : ""}`}
+            >
+              Portfolio
+            </button>
           </div>
 
           {/* Mobile Menu */}
@@ -97,7 +108,7 @@ export const Navigation = () => {
                     key={id}
                     onClick={() => scrollToSection(id)}
                     className={`text-left text-lg font-semibold py-2 px-4 rounded-lg transition-all ${
-                      activeSection === id
+                      !isPortfolioPage && activeSection === id
                         ? "bg-primary/10 text-primary"
                         : "text-foreground hover:bg-muted hover:text-primary"
                     }`}
@@ -105,6 +116,16 @@ export const Navigation = () => {
                     {label}
                   </button>
                 ))}
+                <button
+                  onClick={() => { navigate("/portfolio"); setIsOpen(false); }}
+                  className={`text-left text-lg font-semibold py-2 px-4 rounded-lg transition-all ${
+                    isPortfolioPage
+                      ? "bg-primary/10 text-primary"
+                      : "text-foreground hover:bg-muted hover:text-primary"
+                  }`}
+                >
+                  Portfolio
+                </button>
               </div>
             </SheetContent>
           </Sheet>
