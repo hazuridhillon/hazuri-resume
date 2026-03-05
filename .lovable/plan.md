@@ -1,12 +1,35 @@
 
 
-## Plan: Hide Portfolio Page Until Ready
+## Plan: Repeat Background Image on Mobile
 
-Remove the Portfolio link from navigation so visitors won't discover the page. The page and route will remain in the codebase for when you're ready to add real content.
+### Problem
+On mobile devices, the background image appears too zoomed in even after changing `background-attachment` to `scroll`. The current `background-size: cover` fills the entire screen with a single instance of the image, making it appear zoomed.
 
-### Changes
+### Solution
+Modify the mobile media query to repeat the background image 2-3 times vertically, showing more of the pattern at a smaller size.
 
-1. **`src/components/Navigation.tsx`** — Remove the "Portfolio" button from both desktop and mobile navigation menus (lines ~83-88 for desktop, lines ~107-114 for mobile).
+### Technical Changes
 
-The `/portfolio` route and page file stay intact — you just won't have a visible link to it. When you're ready, we re-add the nav link.
+**File: `src/index.css` (lines 113-118)**
+
+Update the mobile media query to:
+- Change `background-size` from `cover` to a specific size (e.g., `auto 50%` or `100% auto`) that shows the image at a smaller scale
+- Change `background-repeat` to `repeat` so the pattern tiles nicely
+- Keep `background-attachment: scroll` for proper mobile behavior
+
+```css
+/* Fix for mobile - background-attachment: fixed causes zoom issues */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+  }
+}
+```
+
+This will:
+- Display the image at full width but natural height
+- Repeat the image vertically down the page
+- Show more of the mosaic pattern detail on mobile screens
 

@@ -86,12 +86,6 @@ export const Navigation = () => {
                 {label}
               </button>
             ))}
-            <button
-              onClick={() => navigate("/portfolio")}
-              className={`nav-link ${isPortfolioPage ? "nav-link-active" : ""}`}
-            >
-              Portfolio
-            </button>
           </div>
 
           {/* Mobile Menu */}
@@ -116,16 +110,6 @@ export const Navigation = () => {
                     {label}
                   </button>
                 ))}
-                <button
-                  onClick={() => { navigate("/portfolio"); setIsOpen(false); }}
-                  className={`text-left text-lg font-semibold py-2 px-4 rounded-lg transition-all ${
-                    isPortfolioPage
-                      ? "bg-primary/10 text-primary"
-                      : "text-foreground hover:bg-muted hover:text-primary"
-                  }`}
-                >
-                  Portfolio
-                </button>
               </div>
             </SheetContent>
           </Sheet>
