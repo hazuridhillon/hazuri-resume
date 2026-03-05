@@ -86,12 +86,6 @@ export const Navigation = () => {
                 {label}
               </button>
             ))}
-            <button
-              onClick={() => navigate("/portfolio")}
-              className={`nav-link ${isPortfolioPage ? "nav-link-active" : ""}`}
-            >
-              Portfolio
-            </button>
           </div>
 
           {/* Mobile Menu */}
